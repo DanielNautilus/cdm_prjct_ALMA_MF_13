@@ -1,0 +1,24 @@
+{
+  "name": "cdm_prjct_alma_mf_13",
+  "version": "1.0.0",
+  "description": "Проект представляет из многостраничное веб предложение с где все страницы взаимосвязаны \r Основная функция приложения - запись фидбека от студента в виде оценок, историй и отзывов",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielNautilus/cdm_prjct_ALMA_MF_13.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielNautilus/cdm_prjct_ALMA_MF_13/issues"
+  },
+  "homepage": "https://github.com/DanielNautilus/cdm_prjct_ALMA_MF_13#readme",
+  "devDependencies": {
+    "i": "^0.3.7",
+    "lite-server": "^2.6.1"
+  }
+}
