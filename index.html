@@ -2,55 +2,65 @@
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>ALMA MF 13</title>
-    <link rel="stylesheet" href="index_stylessheet.css">
+    <link href="style.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+          referrerpolicy="no-referrer" rel="stylesheet"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="main-body">
-<div class="main-wrapper">
-    <header class="header">
-        <div class="logo">
-            <img src="./images/main.png"
-                 alt="logo"
-                 class="logo__img">
+<div class="wrapper">
+    <header class="wrapper__header header">
+        <a href="#" class="header__logo logo">
+            <img alt="logo"
+                 class="logo__img"
+                 src="./images/main.png">
             <h1 class="logo__name">
                 alma mf 13
             </h1>
-        </div>
+        </a>
 
-        <nav class="nav">
-            <a href="" class="nav__item">Институты/Факультеты</a>
-            <a href="" class="nav__item">Кафедры</a>
-            <a href="" class="nav__item">Преподаватели</a>
-            <a href="" class="nav__item">Рейтинги</a>
+        <nav class="header__main-menu main-menu">
+            <a class="main-menu__item main-menu__item--active" href="">Институты/Факультеты</a>
+            <a class="main-menu__item" href="">Кафедры</a>
+            <a class="main-menu__item" href="">Преподаватели</a>
+            <a class="main-menu__item" href="">Рейтинги</a>
+            <div class="main-menu__kebab-nav kebab-nav">
+                <i class="kebab-nav__icon">#</i>
+                <a class="kebab-nav__item kebab-nav__item--active" href="">Институты/Факультеты</a>
+                <a class="kebab-nav__item" href="">Кафедры</a>
+                <a class="kebab-nav__item" href="">Преподаватели</a>
+                <a class="kebab-nav__item" href="">Рейтинги</a>
+            </div>
         </nav>
 
-        <div class="avatar">
-            <h2 class="avatar__name">
+        <div class="header__user user">
+            <h2 class="user__name">
                 man
             </h2>
-            <img src="./images/avatar.png" alt="avatar" class="avatar__img">
+            <img alt="avatar" class="user__img" src="./images/avatar.png">
         </div>
 
     </header>
 
-    <div class="main-theme">
-        <div class="general-info">
-
+    <div class="wrapper__information information">
+        <div class="information__general-info general-info">
+            <img alt=""
+                 class="general-info__img"
+                 src="./images/main.png">
+            <h1 class="general-info__name">alma mf 13</h1>
         </div>
     </div>
 
-    <footer>
+    <footer class="wrapper__footer footer">
 
     </footer>
 </div>

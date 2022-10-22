@@ -1,0 +1,26 @@
+@import "mixins";
+
+.header{
+  gap: 16px;
+  &__logo{
+
+  }
+
+  &__main-menu{
+
+  }
+
+  &__user{
+
+  }
+
+
+  @include desktop{
+
+  }
+  @include mobile{
+
+  }
+
+}
+

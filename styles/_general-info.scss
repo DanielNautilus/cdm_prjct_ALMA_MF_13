@@ -1,0 +1,15 @@
+.general-info{
+  display: flex;
+  flex-direction: column;
+  &__img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    align-items: center;
+
+  }
+  &__name{
+
+  }
+}

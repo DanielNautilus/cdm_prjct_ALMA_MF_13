@@ -1,0 +1,34 @@
+@mixin mobile {
+  @media screen and (max-width: 1050px) {
+    @content
+  }
+
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1050px) {
+    @content
+  }
+}
+
+@mixin button-clear {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+//@mixin links-clear {
+//  text-decoration: none;
+//  &:focus{
+//    text-decoration: none;
+//  }
+//  &:link{
+//
+//  }
+//  &:visited{
+//
+//  }
+//  &:active{
+//
+//  }
+//}
