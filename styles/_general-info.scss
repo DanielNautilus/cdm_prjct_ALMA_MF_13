@@ -1,15 +1,32 @@
-.general-info{
+.general-info {
   display: flex;
   flex-direction: column;
-  &__img{
-    display: flex;
+  gap: 16px;
+//вынести в отдельный блок img?
+  &__img {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     align-items: center;
-
+    border-radius: 50%;
   }
-  &__name{
 
+  &__name {
+    color:var(--heading-text-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__main-words {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  &__word{
+    font-weight: 600;
+  }
+  &__short-description {
+    text-align: center;
   }
 }

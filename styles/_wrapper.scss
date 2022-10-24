@@ -1,32 +1,23 @@
 @import "mixins";
 
-h1,h2,h3,h4,h5,h6{
-  margin: 0 0 !important;
-}
-*, :after, :before {
-  box-sizing: border-box;
-}
-.main-body{
-  margin: 0 auto;
-  font: 18px/20px "Roboto Light";
-  color: #fff;
-}
-
 .wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  margin: auto;
+  margin: 0 auto;
+
   /*max-width: 90%;*/
-  background-color: antiquewhite;
+  background-color: var(--primary-bg-color);
   &__header{
-    display: flex;
-    justify-content: space-between;
-    height: 72px; //not correct
-    align-items: center;
-    background-color: rgba(40, 46, 106, .8);
+    //height: 72px; //not correct
     padding: 16px 24px;
   }
-  &__information{
-
+  &__content{
+    flex: 1;
+    padding:  24px 0;
+    //flex:1;
+    width: 90%;
+    margin: auto;
   }
   &__footer{
 

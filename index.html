@@ -19,7 +19,7 @@
 <body class="main-body">
 <div class="wrapper">
     <header class="wrapper__header header">
-        <a href="#" class="header__logo logo">
+        <a class="header__logo logo" href="#">
             <img alt="logo"
                  class="logo__img"
                  src="./images/main.png">
@@ -29,39 +29,124 @@
         </a>
 
         <nav class="header__main-menu main-menu">
-            <a class="main-menu__item main-menu__item--active" href="">Институты/Факультеты</a>
+            <a class="main-menu__item" href="">Институты/Факультеты</a>
             <a class="main-menu__item" href="">Кафедры</a>
             <a class="main-menu__item" href="">Преподаватели</a>
             <a class="main-menu__item" href="">Рейтинги</a>
             <div class="main-menu__kebab-nav kebab-nav">
                 <i class="kebab-nav__icon">#</i>
-                <a class="kebab-nav__item kebab-nav__item--active" href="">Институты/Факультеты</a>
-                <a class="kebab-nav__item" href="">Кафедры</a>
-                <a class="kebab-nav__item" href="">Преподаватели</a>
-                <a class="kebab-nav__item" href="">Рейтинги</a>
+                <div class="kebab-nav__container">
+                    <a class="kebab-nav__item kebab-nav__item--active" href="">Институты/Факультеты</a>
+                    <a class="kebab-nav__item" href="">Кафедры</a>
+                    <a class="kebab-nav__item" href="">Преподаватели</a>
+                    <a class="kebab-nav__item" href="">Рейтинги</a>
+                </div>
+
             </div>
         </nav>
 
-        <div class="header__user user">
+        <a class="header__user user" href="#">
             <h2 class="user__name">
                 man
             </h2>
             <img alt="avatar" class="user__img" src="./images/avatar.png">
-        </div>
+        </a>
 
     </header>
 
-    <div class="wrapper__information information">
+    <div class="wrapper__content information">
         <div class="information__general-info general-info">
             <img alt=""
-                 class="general-info__img"
+                 class="general-info__img logo__img logo__img--big"
                  src="./images/main.png">
-            <h1 class="general-info__name">alma mf 13</h1>
+            <h1 class="general-info__name ">alma mf 13</h1>
+            <div class="general-info__main-words">
+                <span class="general-info__word">Свобода</span>
+                <span class="general-info__word">Честность</span>
+                <span class="general-info__word">Анонимность</span>
+                <span class="general-info__word">Прозрачность</span>
+            </div>
+
+            <p class="general-info__short-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusamus aliquam amet autem beatae consequatur deserunt distinctio est et ex fugit id illo ipsa
+                laboriosam libero magni mollitia, necessitatibus neque nihil nobis non nostrum officiis perferendis
+                possimus quaerat quas quasi qui quibusdam quis quo repellat sed soluta suscipit tempora tempore
+                veritatis vero voluptatem? Culpa dicta doloribus enim nulla officia similique ut veniam voluptas
+                voluptate. A blanditiis, cum debitis dicta dolor dolore esse impedit, magni nihil nisi non nostrum
+                obcaecati quo unde ut vel velit! A consequatur dolorum ipsa laborum odit. Expedita illo laborum magnam
+                nulla officiis. Cum magni modi molestias voluptatem?</p>
+        </div>
+
+        <div class="information__usage usage">
+            <div class="usage__item">
+                <i class="usage__icon icon">#</i>
+                <div class="usage__label">Для Студентов</div>
+                <div class="usage__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eum
+                    ipsam maiores officia porro saepe.
+                </div>
+            </div>
+            <div class="usage__item">
+                <i class="usage__icon icon">#</i>
+                <div class="usage__label">Для Абитуриентов</div>
+                <div class="usage__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eum
+                    ipsam maiores officia porro saepe.
+                </div>
+
+            </div>
+            <div class="usage__item">
+                <i class="usage__icon icon">#</i>
+                <div class="usage__label">Для Выпустившихся</div>
+                <div class="usage__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eum
+                    ipsam maiores officia porro saepe.
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="information__summary summary">
+            <h2 class="summary__label">Общая Статистика</h2>
+
+            <div class="summary__item">
+                <div class="summary__content">
+                    <div class="summary__value">42</div>
+                    <div class="summary__property">Студента</div>
+                </div>
+
+                <div class="summary__description">Дели обратную связь по преподавателям</div>
+            </div>
+
+            <div class="summary__item">
+                <div class="summary__content">
+                    <div class="summary__value">42</div>
+                    <div class="summary__property">Преподавателя</div>
+                </div>
+                <div class="summary__description">Получили положительный отзыв от студентов и выпускников</div>
+            </div>
+
+            <div class="summary__item">
+                <div class="summary__content">
+                    <div class="summary__value">42</div>
+                    <div class="summary__property">Историй</div>
+                </div>
+                <div class="summary__description">Было опубликованно</div>
+            </div>
+
+            <div class="summary__item">
+                <div class="summary__content">
+                    <div class="summary__value">42</div>
+                    <div class="summary__property">Отзыва</div>
+                </div>
+                <div class="summary__description">Было оценено обучающимися</div>
+            </div>
+
+
         </div>
     </div>
 
     <footer class="wrapper__footer footer">
-
+        <span class="footer__context">@ alma mf 13</span>
     </footer>
 </div>
 </body>

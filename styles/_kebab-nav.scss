@@ -1,0 +1,38 @@
+@import "mixins";
+
+.kebab-nav {
+  flex: 1 1 0;
+  justify-content: flex-end;
+
+  &__icon {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__item {
+
+  }
+}
+
+@include mobile {
+  .kebab-nav {
+    display: flex;
+
+    &__item {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .kebab-nav {
+    display: none;
+  }
+}

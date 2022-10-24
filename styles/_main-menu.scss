@@ -1,7 +1,6 @@
 @import "mixins";
 
 .main-menu {
-  flex: 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,14 +12,14 @@
     text-decoration: none;
     cursor: pointer;
     word-break: normal;
-    color: #fff;
+    color: var(--primary-text-color);
 
     &:after {
       display: block;
       position: relative;
       width: 0;
       height: 1px;
-      background-color: #fff;
+      background-color: var(--primary-text-color);
       content: "";
 
     }
@@ -41,28 +40,20 @@
   }
 
   &__kebab-nav {
-    flex: 1 1 0;
-    justify-content: flex-end;
   }
 }
+
+
 
 @include mobile {
   .main-menu__item {
     display: none;
 
   }
-  .kebab-nav {
-    display: flex;
 
-    &__item {
-      display: none;
-    }
-  }
 }
 
 @include desktop {
-  .kebab-nav {
-    display: none;
-  }
+
 }
 

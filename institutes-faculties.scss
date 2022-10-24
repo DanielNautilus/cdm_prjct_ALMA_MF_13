@@ -1,4 +1,5 @@
 
+
 @import "styles/wrapper";
 @import "styles/main-menu";
 @import "styles/general-info";
@@ -11,7 +12,11 @@
 @import "styles/information";
 @import "styles/usage";
 @import "styles/summary";
-
+@import "styles/ins-faculties";
+@import "styles/filtres";
+@import "styles/search-block";
+@import "styles/search";
+@import "styles/entity-container";
 
 :root {
   --attent-bg-color:rgba(40, 46, 106, .8);

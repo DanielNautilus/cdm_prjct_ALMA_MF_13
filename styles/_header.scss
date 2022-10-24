@@ -1,26 +1,32 @@
 @import "mixins";
 
-.header{
+.header {
+  display: flex;
   gap: 16px;
-  &__logo{
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--attent-bg-color);
+  height: 72px; //may be correct, check _wrapper
 
+  &__logo {
+    flex: 1;
   }
 
-  &__main-menu{
-
+  &__main-menu {
+    flex: 3;
   }
 
-  &__user{
+  &__user {
 
-  }
-
-
-  @include desktop{
-
-  }
-  @include mobile{
-
+    flex: 1;
   }
 
 }
 
+@include desktop {
+
+}
+
+@include mobile {
+
+}

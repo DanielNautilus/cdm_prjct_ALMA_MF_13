@@ -1,18 +1,39 @@
 .user{
   display: flex;
-  flex: 1;
+
   justify-content: flex-end;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+
   &__name{
+    text-decoration: none;
     text-transform: uppercase;
     font: 20px/24px Roboto;
+    color: var(--primary-text-color);
     font-weight: 400;
+    margin: 0 0;
+    flex-shrink: 0;
   }
   &__img{
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
     background-size:cover;
     border-radius: 25%;
+    object-fit: cover;
+    &--large{
+      width: 160px;
+      height: 160px;
+    }
+    &--big{
+      width: 60px;
+      height: 60px;
+    }
+    &--small{
+      width: 32px;
+      height: 32px;
+    }
   }
 }

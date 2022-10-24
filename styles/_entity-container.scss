@@ -1,0 +1,36 @@
+@import "mixins";
+
+.entity-container{
+
+  &__item {
+    box-sizing: border-box;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 100px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid var(--info-bg-color);
+    border-radius: 16px;
+    &:hover{
+      background: var(--secondary-color);
+      .entity-container__name{
+        color: var(--primary-text-color);
+      }
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 25%;
+  }
+  &__name{
+  //min-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--info-text-color);
+  }
+}

@@ -4,19 +4,27 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 1;
+
   justify-content: flex-start;
-  flex-shrink: 0;
   max-height: 40px;
   text-decoration: none;
-  &__img{
+  color: var(--primary-text-color);
+
+  &__img {
     width: 40px;
     height: 40px;
-    background-size:cover;
+    background-size: cover;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
+
+    &--big {
+      width: 150px;
+      height: 150px;
+    }
   }
-  &__name{
+
+  &__name {
     text-decoration: none;
     text-transform: uppercase;
     font: 24px/24px Roboto;
@@ -25,10 +33,12 @@
     margin: 0 0;
     flex-shrink: 0;
   }
-  &:hover{
+
+  &:hover {
     cursor: pointer;
   }
-  &:focus{
+
+  &:focus {
     text-decoration: none;
   }
 }
