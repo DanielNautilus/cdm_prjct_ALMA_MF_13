@@ -372,6 +372,32 @@
   color: var(--info-text-color);
 }
 
+.teachers-container {
+  display: grid;
+  gap: 16px;
+}
+@media screen and (max-width: 1075px) {
+  .teachers-container__filters {
+    display: none;
+  }
+}
+@media screen and (min-width: 1075px) {
+  .teachers-container {
+    grid-template-areas: "teachers-container__filters teachers-container__search-block";
+    grid-template-columns: 300px 1fr;
+  }
+  .teachers-container__filters {
+    grid-area: teachers-container__filters;
+    border: 1px solid var(--info-bg-color);
+    border-radius: 8px;
+  }
+  .teachers-container__search-block {
+    grid-area: teachers-container__search-block;
+  }
+  .teachers-container__search {
+    position: sticky;
+  }
+}
 .inputs__input--text {
   display: block;
   width: 100%;
@@ -413,4 +439,4 @@
   box-sizing: border-box !important;
 }
 
-/*# sourceMappingURL=departments.css.map */
+/*# sourceMappingURL=teachers.css.map */

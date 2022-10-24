@@ -1,8 +1,7 @@
 @import "mixins";
 
-.ins-faculties {
+.teachers-container {
   display: grid;
-  gap: 16px;
 
   &__filters {
 
@@ -23,7 +22,7 @@
 }
 
 @include mobile {
-  .ins-faculties {
+  .teachers-container {
 
 
     &__filters {
@@ -47,19 +46,19 @@
 
 @include desktop {
 
-  .ins-faculties {
-    grid-template-areas: "ins-faculties__filters ins-faculties__search-block";
+  .teachers-container {
+    grid-template-areas: "teachers-container__filters teachers-container__search-block";
     grid-template-columns: 300px 1fr;
 
     &__filters {
-      grid-area: ins-faculties__filters;
+      grid-area: teachers-container__filters;
       border: 1px solid var(--info-bg-color);
       border-radius: 8px;
-      max-height: 200px;
+
     }
 
     &__search-block {
-      grid-area: ins-faculties__search-block;
+      grid-area: teachers-container__search-block;
       //padding: 20px 0;
     }
 

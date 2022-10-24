@@ -2,18 +2,25 @@
 
 .filters{
   //display: grid;
-  gap: 16px;
+  //gap: 16px;
   background: var(--info-bg-color);
+  &__container{
+    border-top:1px solid var(--primary-text-color);
+  }
   &__label{
     color: var(--primary-text-color);
     padding: 8px 0;
-    height: 30px;
+    min-height: 30px;
     text-align: center;
     text-transform: uppercase;
+    &--mini{
+      min-height: 30px;
+      font-size: 14px;
+    }
   }
   &__item{
     display: block;
-    padding: 16px;
+    padding: 14px;
     color: var(--primary-text-color);
     //display: flex;
     &:hover{
