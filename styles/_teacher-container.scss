@@ -1,0 +1,62 @@
+@import "mixins";
+
+.teacher-container {
+  display: grid;
+  gap: 32px;
+
+  &__info-block {
+    background: var(--info-bg-color);
+    border: 1px solid var(--info-bg-color);
+    border-radius: 8px;
+    color: var(--primary-text-color);
+  }
+
+}
+
+@include small-mobile {
+  .teacher-container {
+    display: grid;
+    gap: 32px;
+
+    &__info-block {
+      padding: 8px;
+      background: var(--info-bg-color);
+      border: 1px solid var(--info-bg-color);
+      border-radius: 8px;
+      color: var(--primary-text-color);
+    }
+
+  }
+}
+
+@include mobile {
+  .teacher-container {
+    display: grid;
+    gap: 32px;
+
+    &__info-block {
+      padding: 16px;
+      background: var(--info-bg-color);
+      border: 1px solid var(--info-bg-color);
+      border-radius: 8px;
+      color: var(--primary-text-color);
+    }
+
+  }
+}
+
+@include desktop {
+  .teacher-container {
+    display: grid;
+    gap: 32px;
+
+    &__info-block {
+      padding: 16px;
+      background: var(--info-bg-color);
+      border: 1px solid var(--info-bg-color);
+      border-radius: 8px;
+      color: var(--primary-text-color);
+    }
+
+  }
+}

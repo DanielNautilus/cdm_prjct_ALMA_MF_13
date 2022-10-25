@@ -2,52 +2,137 @@
 
 .main-info {
   display: grid;
-  grid-template-areas: "main-info__img ";
-  grid-template-columns: 240px 1fr;
 
   &__img {
-    padding: 16px 0 0 16px;
 
     width: 240px;
     height: 240px;
     border-radius: 25%;
   }
-  &__content{
 
+  &__content {
+    display: grid;
+
+    &-container {
+      display: grid;
+
+      &-property {
+        color: var(--primary-text-color);
+        border-bottom: 1px dotted var(--primary-text-color);
+
+      }
+
+      &-value {
+        color: var(--primary-text-color);
+
+        &--link {
+          color: var(--primary-text-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@include small-mobile {
+  .main-info {
+
+    grid-template-rows: 240px 1fr;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    &__img {
+      margin: 0 auto;
+
+    }
+
+    &__content {
+
+
+      &-container {
+        gap: 4px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        &-property {
+
+        }
+
+        &-value {
+
+          &--link {
+
+          }
+        }
+      }
+    }
   }
 }
 
 @include mobile {
 
+
+  .main-info {
+    grid-template-columns: 240px 1fr;
+
+    gap: 16px;
+
+    &__img {
+
+    }
+
+    &__content {
+
+
+      &-container {
+        gap: 4px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+
+        &-property {
+
+        }
+
+        &-value {
+
+          &--link {
+
+          }
+        }
+      }
+    }
+  }
 }
+
 
 @include desktop {
   .main-info {
-    display: grid;
     grid-template-areas: "main-info__img main-info__content";
     grid-template-columns: 240px 1fr;
-    gap: 16px;
+    gap: 24px;
+
     &__img {
       grid-area: main-info__img;
     }
-    &__content{
+
+    &__content {
       display: grid;
-      grid-area:main-info__content;
-      padding: 16px 0;
-      &-container{
+      grid-area: main-info__content;
+
+
+      &-container {
         display: grid;
         gap: 4px;
         align-items: center;
         grid-template-columns: 1fr 1fr;
-        &-property{
-            border-bottom: 1px dotted var(--primary-text-color); //fix
+
+        &-property {
 
         }
-        &-value{
 
-          &--link{
-            color: var(--primary-text-color);
-            text-decoration: none;
+        &-value {
+
+          &--link {
+
           }
         }
       }

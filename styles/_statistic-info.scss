@@ -1,0 +1,32 @@
+@import "mixins";
+
+.statistic-info{
+  display: grid;
+  &__{
+
+  }
+}
+
+@include small-mobile{
+  .statistic-info{
+    &__{
+
+    }
+  }
+}
+
+@include mobile{
+  .statistic-info{
+    &__{
+
+    }
+  }
+}
+
+@include desktop{
+  .statistic-info{
+    &__{
+
+    }
+  }
+}
