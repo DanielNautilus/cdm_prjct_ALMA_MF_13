@@ -1,31 +1,56 @@
 @import "mixins";
 
-.statistic-info{
-  display: grid;
-  &__{
+.statistic-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  &__content {
+    display: flex;
+    flex: 400px;
+    background: red;
+    gap: 8px;
+
+    &-container {
+      flex: 1;
+      display: grid;
+      padding: 8px;
+      gap: 8px;
+      &-{
+
+      }
+    }
   }
+
+  &__feadback {
+    margin-left: auto;
+    flex: 20px;
+    padding: 8px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 8px;
+  }
+
 }
 
-@include small-mobile{
-  .statistic-info{
-    &__{
+@include small-mobile {
+  .statistic-info {
+    &__ {
 
     }
   }
 }
 
-@include mobile{
-  .statistic-info{
-    &__{
+@include mobile {
+  .statistic-info {
+    &__ {
 
     }
   }
 }
 
-@include desktop{
-  .statistic-info{
-    &__{
+@include desktop {
+  .statistic-info {
+    &__ {
 
     }
   }

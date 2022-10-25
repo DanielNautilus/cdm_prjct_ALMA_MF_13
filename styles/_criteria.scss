@@ -1,0 +1,33 @@
+@import "mixins";
+
+.criteria {
+  display: grid;
+  gap: 16px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &-property {
+      text-align: center;
+      display: table-cell;
+      white-space: nowrap;
+    }
+
+    &-value {
+
+    }
+  }
+}
+
+@include small-mobile {
+
+}
+
+@include mobile {
+
+}
+
+@include desktop {
+
+}

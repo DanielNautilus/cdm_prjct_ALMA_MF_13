@@ -1,0 +1,23 @@
+@import "mixins";
+
+.button {
+  &--link {
+    @include button-clear;
+    color: #fff;
+  }
+
+  &--icon {
+    @include button-clear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+
+    &--active,
+    &:hover {
+      color: red;
+    }
+  }
+}
