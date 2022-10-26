@@ -13,7 +13,7 @@
     &-container {
       flex: 1;
       display: grid;
-      padding: 8px;
+      //padding: 8px;
       gap: 16px;
       &-total-stats{
 
@@ -36,7 +36,23 @@
 
 @include small-mobile {
   .statistic-info {
-    &__ {
+    &__content {
+      flex-direction: column;
+
+      &-container {
+
+        &-total-stats {
+
+        }
+
+        &-rating {
+
+        }
+      }
+    }
+
+    &__feadback {
+      margin: 0 auto;
 
     }
   }
@@ -44,7 +60,23 @@
 
 @include mobile {
   .statistic-info {
-    &__ {
+    &__content {
+      //flex-direction: column;
+
+      &-container {
+
+        &-total-stats {
+
+        }
+
+        &-rating {
+
+        }
+      }
+    }
+
+    &__feadback {
+      margin: 0 auto;
 
     }
   }

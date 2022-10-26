@@ -29,10 +29,10 @@
 @include mobile {
   .teacher-container {
     display: grid;
-    gap: 32px;
+    gap: 24px;
 
     &__info-block {
-      padding: 16px;
+      padding: 8px;
 
     }
 
