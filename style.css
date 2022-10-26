@@ -324,6 +324,7 @@
   flex: 3;
 }
 .header__user {
+  margin-left: auto;
   flex: 1;
 }
 
@@ -712,15 +713,21 @@
 }
 .feedback__container {
   display: grid;
-  gap: 16px;
-  height: 50vh;
+  max-height: 50vh;
   overflow-y: auto;
 }
 .feedback__container-item {
-  margin: 4px;
+  margin: 16px;
   padding: 16px;
   border-radius: 8px;
   border: 1px solid var(--primary-text-color);
+}
+.feedback__container-item--story {
+  margin: 16px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .estimates {
@@ -731,6 +738,36 @@
 .estimates__person {
   margin-right: auto;
 }
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.story__author {
+  margin-right: auto;
+}
+.story__content {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 20px) 1fr;
+  gap: 8px;
+}
+.story__content-topic {
+  margin: 0;
+}
+.story__content-message {
+  margin: 0;
+  text-align: inherit;
+}
+.story__reactions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.story__reactions-icon {
+  padding: 8px;
+}
+
 :root {
   --attent-bg-color:rgba(40, 46, 106, .8);
   --primary-bg-color: #FAEBD7FF;

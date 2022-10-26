@@ -1,0 +1,53 @@
+@import "mixins";
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__author {
+    margin-right: auto;
+  }
+
+  &__content {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 20px) 1fr;
+    gap: 8px;
+
+    &-topic {
+      margin: 0;
+    }
+
+    &-date {
+
+    }
+
+    &-discipline {
+
+    }
+
+    &-message {
+      //Данное не робит надо подключать lettering.js
+      //&::last-word{
+      //  white-space: nowrap;
+      //  overflow: hidden;
+      //  text-overflow: ellipsis;
+      //}
+      margin: 0;
+      text-align: inherit;
+      //max-height: 24vh;
+
+    }
+  }
+
+  &__reactions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+
+    &-icon {
+      padding: 8px;
+    }
+  }
+}
