@@ -98,7 +98,8 @@
                 <div class="statistic-info__content-container">
                     <div class="statistic-info__content-container-total-stats total-stats">
                         <svg class="total-stats__circle">
-                            <circle cx="calc(50%)" cy="calc(50%)" fill="none" r="110" stroke="var(--secondary-color)" stroke-width="9"></circle>
+                            <circle cx="calc(50%)" cy="calc(50%)" fill="none" r="110" stroke="var(--secondary-color)"
+                                    stroke-width="9"></circle>
 
                         </svg>
                         <div class="total-stats__content">
@@ -109,7 +110,7 @@
                                 Общая характеристика
                             </div>
 
-<!--                            TODO: Спросить я не уверен, что я так надо... тут же будет просто переключения таба-->
+                            <!--                            TODO: Спросить я не уверен, что я так надо... тут же будет просто переключения таба-->
                             <button class="total-stats__content-value total-stats__content-value--number button button--link">
                                 50 Отзывов
                             </button>
@@ -117,7 +118,7 @@
                         </div>
                     </div>
                     <div class="statistic-info__content-container-rating rating">
-                        <a href="#" class="rating__item">
+                        <a class="rating__item link link--cleared" href="#">
                             2 Место среди 2000 преподавателей
                         </a>
                     </div>
@@ -195,7 +196,401 @@
         </div>
 
         <div class="teacher-container__info-block tabs">
-            tabs
+
+            <nav class="tabs__navigation">
+                <a class="tabs__navigation-item link link--cleared" href="#tab01">
+                    <span class="tabs__navigation-item-text">Оценки</span>
+                </a>
+                <a class="tabs__navigation-item link link--cleared" href="#tab02">
+                    <span class="tabs__navigation-item-text">Истории</span>
+                </a>
+                <a class="tabs__navigation-item link link--cleared" href="#tab03">
+                    <span class="tabs__navigation-item-text">Коментарии</span>
+                </a>
+            </nav>
+            <div class="tabs__container">
+                <div class="tabs__container-item feedback feedback--stats" id="tab01">
+                    <!--                    <label class="feedback__input input">-->
+                    <!--                        <input class="input__text"/>-->
+                    <!--                        <span class="input__icon">X</span>-->
+                    <!--                    </label>-->
+                    <div class="feedback__container">
+                        <div class="feedback__container-item estimates">
+                            <div class="estimates__person user">
+
+                                <img alt="avatar" class="user__img" src="../images/avatar.png">
+                                <h2 class="user__name">
+                                    man
+                                </h2>
+                            </div>
+                            <div class="estimates__content criteria">
+                                <div class="criteria__container">
+                            <span class="criteria__container-property">
+                                Предметная компетенция
+                            </span>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Объективность оценки знаний студентов
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Ясность излагаемого материала
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Знание возможностей новых информационных технологий и умение использовать их в
+                                        процессе
+                                        обучения
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Толерантное отношение к студенту
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__container-item estimates">
+                            <div class="estimates__person user">
+
+                                <img alt="avatar" class="user__img" src="../images/avatar.png">
+                                <h2 class="user__name">
+                                    man
+                                </h2>
+                            </div>
+                            <div class="estimates__content criteria">
+                                <div class="criteria__container">
+                            <span class="criteria__container-property">
+                                Предметная компетенция
+                            </span>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Объективность оценки знаний студентов
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Ясность излагаемого материала
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Знание возможностей новых информационных технологий и умение использовать их в
+                                        процессе
+                                        обучения
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Толерантное отношение к студенту
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__container-item estimates">
+                            <div class="estimates__person user">
+
+                                <img alt="avatar" class="user__img" src="../images/avatar.png">
+                                <h2 class="user__name">
+                                    man
+                                </h2>
+                            </div>
+                            <div class="estimates__content criteria">
+                                <div class="criteria__container">
+                            <span class="criteria__container-property">
+                                Предметная компетенция
+                            </span>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Объективность оценки знаний студентов
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Ясность излагаемого материала
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Знание возможностей новых информационных технологий и умение использовать их в
+                                        процессе
+                                        обучения
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Толерантное отношение к студенту
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__container-item estimates">
+                            <div class="estimates__person user">
+
+                                <img alt="avatar" class="user__img" src="../images/avatar.png">
+                                <h2 class="user__name">
+                                    man
+                                </h2>
+                            </div>
+                            <div class="estimates__content criteria">
+                                <div class="criteria__container">
+                            <span class="criteria__container-property">
+                                Предметная компетенция
+                            </span>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Объективность оценки знаний студентов
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Ясность излагаемого материала
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Знание возможностей новых информационных технологий и умение использовать их в
+                                        процессе
+                                        обучения
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Толерантное отношение к студенту
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__container-item estimates">
+                            <div class="estimates__person user">
+
+                                <img alt="avatar" class="user__img" src="../images/avatar.png">
+                                <h2 class="user__name">
+                                    man
+                                </h2>
+                            </div>
+                            <div class="estimates__content criteria">
+                                <div class="criteria__container">
+                            <span class="criteria__container-property">
+                                Предметная компетенция
+                            </span>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Объективность оценки знаний студентов
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Ясность излагаемого материала
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Знание возможностей новых информационных технологий и умение использовать их в
+                                        процессе
+                                        обучения
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                                <div class="criteria__container">
+                                    <div class="criteria__container-property">
+                                        Толерантное отношение к студенту
+                                    </div>
+                                    <div class="criteria__container-value">
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                        <i class="criteria__container-value-stars icon icon--star">#</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabs__container-item" id="tab02">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ullam.
+                </div>
+                <div class="tabs__container-item" id="tab03">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, illum?
+                </div>
+            </div>
+
         </div>
     </div>
 

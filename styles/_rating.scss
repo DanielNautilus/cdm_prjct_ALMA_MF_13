@@ -2,9 +2,14 @@
 
 .rating {
   display: flex;
-  &__item{
-justify-content: center;
-    align-content: center;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    text-align: center;
+    padding: 8px;
+    border-radius: 16px;
+    min-height: 20px;
+    border: 1px solid var(--primary-text-color);
   }
 
 }

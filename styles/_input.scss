@@ -1,17 +1,15 @@
-.inputs {
+.input {
+  position: relative;
 
-  &__input {
-
-    &--radio {
-
-    }
-
-    &--checkbox {
+    &__radio {
 
     }
 
-    &--text {
+    &__checkbox {
 
+    }
+
+    &__text {
       display: block;
       width: 100%;
       border: 0;
@@ -37,10 +35,10 @@
       }
     }
 
-    &--password {
+    &__password {
 
     }
-  }
+
 
   &__label {
 
@@ -54,9 +52,13 @@
   }
 
   &__icon {
-    position: relative;
-    left: 70%;
+    color: var(--info-text-color);
+    position: absolute;
+    right: 1%;
     //right: -70%;
-    //top: 30%;
+    top: 29%;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }

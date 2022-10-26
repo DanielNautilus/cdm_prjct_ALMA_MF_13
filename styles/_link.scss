@@ -1,0 +1,9 @@
+@import "mixins";
+
+.link{
+
+  &--cleared{
+    color: var(--primary-text-color);
+    text-decoration: none;
+  }
+}

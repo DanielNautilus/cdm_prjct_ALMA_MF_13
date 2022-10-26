@@ -1,0 +1,16 @@
+@import "mixins";
+
+.estimates {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+
+  &__person {
+    margin-right: auto;
+  }
+
+  &__content {
+
+  }
+}

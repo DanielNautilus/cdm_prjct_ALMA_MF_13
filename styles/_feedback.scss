@@ -1,0 +1,34 @@
+@import "mixins";
+
+.feedback {
+  padding: 20px;
+
+  &--stats {
+  }
+
+  &--story {
+
+  }
+
+  &--comment {
+
+  }
+
+  &__container {
+    display: grid;
+    //justify-content: center;
+    //align-items: center;
+    gap: 16px;
+    height: 50vh;
+    overflow-y: auto;
+    &-item {
+      margin: 4px;
+
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--primary-text-color);
+
+
+    }
+  }
+}
