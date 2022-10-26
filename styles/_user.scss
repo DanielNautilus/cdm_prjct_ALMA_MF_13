@@ -16,6 +16,9 @@
     font-weight: 400;
     margin: 0 0;
     flex-shrink: 0;
+    max-width: 140px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   &__img{
     width: 40px;

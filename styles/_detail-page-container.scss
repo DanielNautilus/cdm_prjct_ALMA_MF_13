@@ -1,21 +1,17 @@
 @import "mixins";
 
-.teacher-container {
+.detail-page-container{
   display: grid;
-  gap: 32px;
-
-  &__info-block {
+  &__info-block{
     background: var(--info-bg-color);
     border: 1px solid var(--info-bg-color);
     border-radius: 8px;
     color: var(--primary-text-color);
   }
-
 }
-
 @include small-mobile {
-  .teacher-container {
-    display: grid;
+  .detail-page-container {
+
     gap: 32px;
 
     &__info-block {
@@ -27,8 +23,7 @@
 }
 
 @include mobile {
-  .teacher-container {
-    display: grid;
+  .detail-page-container {
     gap: 24px;
 
     &__info-block {
@@ -40,8 +35,7 @@
 }
 
 @include desktop {
-  .teacher-container {
-    display: grid;
+  .detail-page-container {
     gap: 32px;
 
     &__info-block {

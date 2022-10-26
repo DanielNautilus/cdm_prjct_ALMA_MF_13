@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>ALMA MF 13 | Преподаватели</title>
+    <link href="../style.css" rel="stylesheet">
+
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="main-body">
+<div class="wrapper">
+    <header class="wrapper__header header">
+        <a class="header__logo logo" href="#">
+            <img alt="logo"
+                 class="logo__img"
+                 src="../images/main.png">
+            <h1 class="logo__name">
+                alma mf 13
+            </h1>
+        </a>
+
+        <nav class="header__main-menu main-menu">
+            <a class="main-menu__item main-menu__item--active" href="">Институты/Факультеты</a>
+            <a class="main-menu__item" href="">Кафедры</a>
+            <a class="main-menu__item" href="">Преподаватели</a>
+            <a class="main-menu__item" href="">Рейтинги</a>
+            <div class="main-menu__kebab-nav kebab-nav">
+                <i class="kebab-nav__icon">#</i>
+                <div class="kebab-nav__container">
+                    <a class="kebab-nav__item " href="">Институты/Факультеты</a>
+                    <a class="kebab-nav__item" href="">Кафедры</a>
+                    <a class="kebab-nav__item kebab-nav__item--active" href="">Преподаватели</a>
+                    <a class="kebab-nav__item" href="">Рейтинги</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <a class="header__user user" href="#">
+            <h2 class="user__name">
+                man
+            </h2>
+            <img alt="avatar" class="user__img" src="../images/avatar.png">
+        </a>
+
+    </header>
+
+    <div class="wrapper__content detail-page-container">
+
+        <div class="detail-page-container__info-block main-info">
+            <img alt="" class="main-info__img" src="../images/main.png">
+            <div class="main-info__content">
+                <div class="main-info__content-container">
+                    <div class="main-info__content-container-property">Название подразделения</div>
+                    <div class="main-info__content-container-value">Институт электроники и светотехники</div>
+                </div>
+                <div class="main-info__content-container">
+                    <div class="main-info__content-container-property">Направление</div>
+                    <div class="main-info__content-container-value">Техническое</div>
+                </div>
+                <div class="main-info__content-container">
+                    <div class="main-info__content-container-property">Число кафедр</div>
+                    <div class="main-info__content-container-value">16</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="detail-page-container__info-block statistic-info">
+            <h2 class="statistic-info__heading">Статистика</h2>
+
+            <div class="statistic-info__content">
+                <div class="statistic-info__content-container">
+                    <div class="statistic-info__content-container-total-stats total-stats">
+                        <svg class="total-stats__circle">
+                            <circle cx="calc(50%)" cy="calc(50%)" fill="none" r="110" stroke="var(--secondary-color)"
+                                    stroke-width="9"></circle>
+
+                        </svg>
+                        <div class="total-stats__content">
+                            <div class="total-stats__content-value">
+                                5.0
+                            </div>
+                            <div class="total-stats__content-value total-stats__content-value--title">
+                                Общая характеристика
+                            </div>
+
+                            <!--                            TODO: Спросить я не уверен, что я так надо... тут же будет просто переключения таба-->
+                            <a class="total-stats__content-value total-stats__content-value--number link link--cleared"
+                               href="#">
+                                500 Отзывов
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="statistic-info__content-container-rating rating">
+                        <a class="rating__item link link--cleared" href="#">
+                            2 Место среди 2000 институтов и факультетов
+                        </a>
+                    </div>
+                </div>
+                <div class="statistic-info__content-container">
+                    <div class="statistic-info__content-container-criteria criteria">
+                        <div class="criteria__container">
+                            <span class="criteria__container-property">
+                                Качество преподавательского состава
+                            </span>
+                            <div class="criteria__container-value">
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                            </div>
+                        </div>
+                        <div class="criteria__container">
+                            <div class="criteria__container-property">
+                                Объективность оценки знаний студентов
+                            </div>
+                            <div class="criteria__container-value">
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                            </div>
+                        </div>
+                        <div class="criteria__container">
+                            <div class="criteria__container-property">
+                                Ясность излагаемого материала
+                            </div>
+                            <div class="criteria__container-value">
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                            </div>
+                        </div>
+                        <div class="criteria__container">
+                            <div class="criteria__container-property">
+                                Знание возможностей новых информационных технологий и умение использовать их в
+                                процессе
+                                обучения
+                            </div>
+                            <div class="criteria__container-value">
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                            </div>
+                        </div>
+                        <div class="criteria__container">
+                            <div class="criteria__container-property">
+                                Толерантное отношение к студенту
+                            </div>
+                            <div class="criteria__container-value">
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistic-info__feadback">
+                <button class="button button--link">Дать характеристику</button>
+            </div>
+        </div>
+
+        <!--        <div class="teacher-container__info-block tabs">-->
+
+        <!--            <nav class="tabs__navigation">-->
+        <!--                <a class="tabs__navigation-item link link&#45;&#45;cleared" href="#tab01">-->
+        <!--                    <span class="tabs__navigation-item-text">Оценки</span>-->
+        <!--                </a>-->
+        <!--                <a class="tabs__navigation-item link link&#45;&#45;cleared" href="#tab02">-->
+        <!--                    <span class="tabs__navigation-item-text">Истории</span>-->
+        <!--                </a>-->
+        <!--                <a class="tabs__navigation-item link link&#45;&#45;cleared" href="#tab03">-->
+        <!--                    <span class="tabs__navigation-item-text">Коментарии</span>-->
+        <!--                </a>-->
+        <!--            </nav>-->
+        <!--            <div class="tabs__container">-->
+        <!--                <div class="tabs__container-item feedback" id="tab01">-->
+        <!--                    &lt;!&ndash;                    <label class="feedback__input input">&ndash;&gt;-->
+        <!--                    &lt;!&ndash;                        <input class="input__text"/>&ndash;&gt;-->
+        <!--                    &lt;!&ndash;                        <span class="input__icon">X</span>&ndash;&gt;-->
+        <!--                    &lt;!&ndash;                    </label>&ndash;&gt;-->
+        <!--                    <div class="feedback__container">-->
+        <!--                        <div class="feedback__container-item estimates">-->
+        <!--                            <div class="estimates__person user">-->
+
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">-->
+        <!--                                    man-->
+        <!--                                </h2>-->
+        <!--                            </div>-->
+        <!--                            <div class="estimates__content criteria">-->
+        <!--                                <div class="criteria__container">-->
+        <!--                            <span class="criteria__container-property">-->
+        <!--                                Предметная компетенция-->
+        <!--                            </span>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Объективность оценки знаний студентов-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Ясность излагаемого материала-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Знание возможностей новых информационных технологий и умение использовать их в-->
+        <!--                                        процессе-->
+        <!--                                        обучения-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Толерантное отношение к студенту-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item estimates">-->
+        <!--                            <div class="estimates__person user">-->
+
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">-->
+        <!--                                    man-->
+        <!--                                </h2>-->
+        <!--                            </div>-->
+        <!--                            <div class="estimates__content criteria">-->
+        <!--                                <div class="criteria__container">-->
+        <!--                            <span class="criteria__container-property">-->
+        <!--                                Предметная компетенция-->
+        <!--                            </span>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Объективность оценки знаний студентов-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Ясность излагаемого материала-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Знание возможностей новых информационных технологий и умение использовать их в-->
+        <!--                                        процессе-->
+        <!--                                        обучения-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Толерантное отношение к студенту-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item estimates">-->
+        <!--                            <div class="estimates__person user">-->
+
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">-->
+        <!--                                    man-->
+        <!--                                </h2>-->
+        <!--                            </div>-->
+        <!--                            <div class="estimates__content criteria">-->
+        <!--                                <div class="criteria__container">-->
+        <!--                            <span class="criteria__container-property">-->
+        <!--                                Предметная компетенция-->
+        <!--                            </span>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Объективность оценки знаний студентов-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Ясность излагаемого материала-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Знание возможностей новых информационных технологий и умение использовать их в-->
+        <!--                                        процессе-->
+        <!--                                        обучения-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Толерантное отношение к студенту-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item estimates">-->
+        <!--                            <div class="estimates__person user">-->
+
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">-->
+        <!--                                    man-->
+        <!--                                </h2>-->
+        <!--                            </div>-->
+        <!--                            <div class="estimates__content criteria">-->
+        <!--                                <div class="criteria__container">-->
+        <!--                            <span class="criteria__container-property">-->
+        <!--                                Предметная компетенция-->
+        <!--                            </span>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Объективность оценки знаний студентов-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Ясность излагаемого материала-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Знание возможностей новых информационных технологий и умение использовать их в-->
+        <!--                                        процессе-->
+        <!--                                        обучения-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Толерантное отношение к студенту-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item estimates">-->
+        <!--                            <div class="estimates__person user">-->
+
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">-->
+        <!--                                    man-->
+        <!--                                </h2>-->
+        <!--                            </div>-->
+        <!--                            <div class="estimates__content criteria">-->
+        <!--                                <div class="criteria__container">-->
+        <!--                            <span class="criteria__container-property">-->
+        <!--                                Предметная компетенция-->
+        <!--                            </span>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Объективность оценки знаний студентов-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Ясность излагаемого материала-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Знание возможностей новых информационных технологий и умение использовать их в-->
+        <!--                                        процессе-->
+        <!--                                        обучения-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                                <div class="criteria__container">-->
+        <!--                                    <div class="criteria__container-property">-->
+        <!--                                        Толерантное отношение к студенту-->
+        <!--                                    </div>-->
+        <!--                                    <div class="criteria__container-value">-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                        <i class="criteria__container-value-stars icon icon&#45;&#45;star">#</i>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="tabs__container-item feedback" id="tab02">-->
+        <!--                    <div class="feedback__container">-->
+        <!--                        <div class="feedback__container-item feedback__container-item&#45;&#45;story story">-->
+        <!--                            <div class="story__author user">-->
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">User 1</h2>-->
+
+        <!--                            </div>-->
+        <!--                            <article class="story__content">-->
+        <!--                                <h2 class="story__content-topic">4 пары ассемблера в понедельник</h2>-->
+        <!--                                <div class="story__content-date">Дата: 4 семестор, 2000</div>-->
+        <!--                                <div class="story__content-discipline">Дисциплина: Ассемблер</div>-->
+        <!--                                <p class="story__content-message">Lorem ipsum dolor sit amet, consectetur adipisicing-->
+        <!--                                    elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis. </p>-->
+        <!--                            </article>-->
+        <!--                            <div class="story__reactions icon">-->
+        <!--                                <span class="story__reactions-icon">+</span>-->
+        <!--                                <span class="story__reactions-icon">-</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item feedback__container-item&#45;&#45;story story">-->
+        <!--                            <div class="story__author user">-->
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">User 1</h2>-->
+
+        <!--                            </div>-->
+        <!--                            <article class="story__content">-->
+        <!--                                <h2 class="story__content-topic">4 пары ассемблера в понедельник</h2>-->
+        <!--                                <div class="story__content-date">Дата: 4 семестор, 2000</div>-->
+        <!--                                <div class="story__content-discipline">Дисциплина: Ассемблер</div>-->
+        <!--                                <p class="story__content-message">Lorem ipsum dolor sit amet, consectetur adipisicing-->
+        <!--                                    elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis. </p>-->
+        <!--                            </article>-->
+        <!--                            <div class="story__reactions icon">-->
+        <!--                                <span class="story__reactions-icon">+</span>-->
+        <!--                                <span class="story__reactions-icon">-</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item feedback__container-item&#45;&#45;story story">-->
+        <!--                            <div class="story__author user">-->
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">User 1</h2>-->
+
+        <!--                            </div>-->
+        <!--                            <article class="story__content">-->
+        <!--                                <h2 class="story__content-topic">4 пары ассемблера в понедельник</h2>-->
+        <!--                                <div class="story__content-date">Дата: 4 семестор, 2000</div>-->
+        <!--                                <div class="story__content-discipline">Дисциплина: Ассемблер</div>-->
+        <!--                                <p class="story__content-message">Lorem ipsum dolor sit amet, consectetur adipisicing-->
+        <!--                                    elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis.Lorem ipsum dolor sit-->
+        <!--                                    amet, consectetur adipisicing elit. Ab adipisci aperiam-->
+        <!--                                    architecto autem consectetur doloremque eaque, esse est harum ipsum laudantium-->
+        <!--                                    maxime natus necessitatibus, neque nulla optio pariatur perferendis quae quam-->
+        <!--                                    quisquam repellat repudiandae suscipit tempore temporibus ullam vel veritatis. Natus-->
+        <!--                                    nostrum quo soluta suscipit! Ab beatae dolorem, eligendi obcaecati praesentium qui-->
+        <!--                                    voluptas voluptates! Aliquam amet autem distinctio enim esse et, facilis, maxime-->
+        <!--                                    nisi nostrum perferendis, quas recusandae voluptas voluptatum. Doloribus modi,-->
+        <!--                                    perspiciatis. Accusantium, at corporis distinctio earum eius ex fugiat in iste-->
+        <!--                                    nesciunt non pariatur quae reiciendis temporibus tenetur veniam voluptate-->
+        <!--                                    voluptatum? Accusantium autem hic impedit, nam sunt veritatis. </p>-->
+        <!--                            </article>-->
+        <!--                            <div class="story__reactions icon">-->
+        <!--                                <span class="story__reactions-icon">+</span>-->
+        <!--                                <span class="story__reactions-icon">-</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="tabs__container-item feedback" id="tab03">-->
+        <!--                    <label class="feedback__input input">-->
+        <!--                        <input class="input__text"/>-->
+        <!--                        <span class="input__icon">X</span>-->
+
+        <!--                    </label>-->
+        <!--                    <div class="feedback__container">-->
+        <!--                        <div class="feedback__container-item comment">-->
+        <!--                            <div class="comment__author user">-->
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">User 1</h2>-->
+
+        <!--                            </div>-->
+        <!--                            <div class="comment__content">-->
+        <!--                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, neque.-->
+        <!--                            </div>-->
+        <!--                            <div class="comment__data">42:42 42.42.4242</div>-->
+        <!--                            <div class="comment__reactions">-->
+        <!--                                <span class="story__reactions-icon">+</span>-->
+        <!--                                <span class="story__reactions-icon">-</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item comment">-->
+        <!--                            <div class="comment__author user">-->
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">User 1</h2>-->
+
+        <!--                            </div>-->
+        <!--                            <div class="comment__content">-->
+        <!--                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, neque.-->
+        <!--                            </div>-->
+        <!--                            <div class="comment__data">42:42 42.42.4242</div>-->
+        <!--                            <div class="comment__reactions">-->
+        <!--                                <span class="story__reactions-icon">+</span>-->
+        <!--                                <span class="story__reactions-icon">-</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="feedback__container-item comment">-->
+        <!--                            <div class="comment__author user">-->
+        <!--                                <img alt="avatar" class="user__img" src="../images/avatar.png">-->
+        <!--                                <h2 class="user__name">User 1</h2>-->
+
+        <!--                            </div>-->
+        <!--                            <div class="comment__content">-->
+        <!--                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, neque.-->
+        <!--                            </div>-->
+        <!--                            <div class="comment__data">42:42 42.42.4242</div>-->
+        <!--                            <div class="comment__reactions">-->
+        <!--                                <span class="story__reactions-icon">+</span>-->
+        <!--                                <span class="story__reactions-icon">-</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--        </div>-->
+    </div>
+
+
+    <footer class="wrapper__footer footer">
+        <span class="footer__context">@ alma mf 13</span>
+    </footer>
+</div>
+</body>
+</html>
