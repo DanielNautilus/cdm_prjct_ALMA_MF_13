@@ -49,13 +49,14 @@
   cursor: pointer;
   padding: 8px;
   border: 1px solid var(--info-bg-color);
+  background: var(--info-bg-color);
   border-radius: 16px;
 }
 .entity-container__item:hover {
   background: var(--secondary-color);
 }
 .entity-container__item:hover .entity-container__name {
-  color: var(--primary-text-color);
+  color: var(--info-text-color);
 }
 .entity-container__img {
   margin: 0 auto;
@@ -66,7 +67,7 @@
 .entity-container__name {
   text-align: center;
   text-decoration: none;
-  color: var(--info-text-color);
+  color: var(--primary-text-color);
 }
 
 .filters {
@@ -326,6 +327,7 @@
 .main-body {
   margin: 0 auto;
   font: 18px/20px "Roboto Light";
+  color: var(--primary-text-color);
 }
 
 .main-info {
@@ -844,26 +846,45 @@
 
 .overall-ratings {
   display: grid;
+  color: var(--primary-text-color);
 }
 .overall-ratings__container {
+  padding: 16px;
+  display: grid;
   background: var(--info-bg-color);
   border: 1px solid var(--info-bg-color);
   border-radius: 8px;
+  grid-template-rows: 30px 1fr;
 }
 .overall-ratings__container-header {
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
 }
+.overall-ratings__container-content {
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+}
+.overall-ratings__container-content-item {
+  max-width: 260px;
+  max-height: 360px;
+  border: 1px solid var(--primary-text-color);
+}
+
 @media screen and (max-width: 680px) {
   .overall-ratings {
     gap: 20px;
   }
   .overall-ratings__container {
     padding: 8px;
+    gap: 8px;
   }
   .overall-ratings__container-header {
     margin: 0 auto;
+  }
+  .overall-ratings__container-content {
+    gap: 16px;
   }
 }
 @media screen and (min-width: 680px) and (max-width: 1075px) {
@@ -871,12 +892,23 @@
     gap: 24px;
   }
   .overall-ratings__container {
+    gap: 16px;
     padding: 16px;
+  }
+  .overall-ratings__container-content {
+    gap: 12px;
   }
 }
 @media screen and (min-width: 1075px) {
   .overall-ratings {
     gap: 32px;
+  }
+  .overall-ratings__container {
+    gap: 16px;
+    padding: 16px;
+  }
+  .overall-ratings__container-content {
+    gap: 12px;
   }
 }
 :root {

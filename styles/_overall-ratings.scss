@@ -2,19 +2,34 @@
 
 .overall-ratings {
   display: grid;
-
+color: var(--primary-text-color);
   &__container {
+    padding: 16px;
+    display: grid;
     background: var(--info-bg-color);
     border: 1px solid var(--info-bg-color);
     border-radius: 8px;
+
+    grid-template-rows: 30px 1fr;
+
     &-header {
+      //height: 30px;
       margin: 0 auto;
       font-size: 20px;
       text-align: center;
     }
 
     &-content {
-
+      display: grid;
+      gap: 16px;
+      justify-content: center;
+      //max-height: 80vh;
+      //overflow: auto;
+      &-item{
+        max-width: 260px;
+        max-height: 360px;
+        border: 1px solid var(--primary-text-color);
+      }
     }
   }
 }
@@ -26,12 +41,14 @@
 
     &__container {
       padding: 8px;
+      gap: 8px;
 
       &-header {
         margin: 0 auto;
       }
 
       &-content {
+        gap: 16px;
 
       }
     }
@@ -44,12 +61,14 @@
 
 
     &__container {
+      gap: 16px;
       padding: 16px;
 
       &-header {
       }
 
       &-content {
+        gap: 12px;
 
       }
     }
@@ -61,10 +80,14 @@
     gap: 32px;
 
     &__container {
+      gap: 16px;
+      padding: 16px;
+
       &-header {
       }
 
       &-content {
+        gap: 12px;
 
       }
     }
