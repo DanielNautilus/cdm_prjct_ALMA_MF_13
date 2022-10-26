@@ -3,29 +3,18 @@
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
-  max-width: 1920px;
   /*max-width: 90%;*/
   background-color: var(--primary-bg-color);
 }
 .wrapper__header {
-  overflow: hidden;
-  max-width: 1920px;
   padding: 16px 24px;
 }
 .wrapper__content {
-  overflow: hidden;
-  max-width: 1920px;
   flex: 1;
   padding: 24px 0;
   width: 90%;
   margin: auto;
 }
-.wrapper__footer {
-  overflow: hidden;
-  max-width: 1920px;
-}
-
 .button:hover {
   cursor: pointer;
 }
@@ -138,6 +127,11 @@
   width: 100%;
   height: 1px;
 }
+@media screen and (max-width: 680px) {
+  .main-menu__item {
+    display: none;
+  }
+}
 @media screen and (min-width: 680px) and (max-width: 1075px) {
   .main-menu__item {
     display: none;
@@ -249,6 +243,7 @@
 
 .input {
   position: relative;
+  display: flex;
 }
 .input__text {
   display: block;
@@ -276,7 +271,7 @@
   color: var(--info-text-color);
   position: absolute;
   right: 1%;
-  top: 29%;
+  top: 20%;
 }
 .input__icon:hover {
   cursor: pointer;
@@ -416,6 +411,14 @@
   display: grid;
   gap: 8px;
 }
+@media screen and (max-width: 680px) {
+  .kebab-nav {
+    display: flex;
+  }
+  .kebab-nav__item {
+    display: none;
+  }
+}
 @media screen and (min-width: 680px) and (max-width: 1075px) {
   .kebab-nav {
     display: flex;
@@ -512,11 +515,11 @@
   align-items: center;
 }
 .rating__item {
+  background: var(--secondary-color);
   text-align: center;
   padding: 8px;
   border-radius: 16px;
   min-height: 20px;
-  border: 1px solid var(--primary-text-color);
 }
 
 .search-block__entity-container {
@@ -532,8 +535,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  overflow: hidden;
-  max-width: 1920px;
 }
 .statistic-info__content {
   display: flex;
@@ -699,7 +700,8 @@
   padding: 20px;
 }
 .tabs__container-item:target {
-  display: block;
+  display: grid;
+  gap: 16px;
 }
 .tabs__container-item:before {
   content: "";
@@ -749,7 +751,6 @@
 .story__content {
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 20px) 1fr;
   gap: 8px;
 }
 .story__content-topic {
@@ -765,6 +766,32 @@
   margin-left: auto;
 }
 .story__reactions-icon {
+  padding: 8px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.comment__author {
+  margin-right: auto;
+}
+.comment__content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.comment__data {
+  font-size: 14px;
+  margin-left: auto;
+}
+.comment__reactions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.comment__reactions-icon {
   padding: 8px;
 }
 

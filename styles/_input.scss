@@ -1,5 +1,6 @@
 .input {
   position: relative;
+  display: flex;
 
     &__radio {
 
@@ -56,7 +57,7 @@
     position: absolute;
     right: 1%;
     //right: -70%;
-    top: 29%;
+    top: 20%;
     &:hover{
       cursor: pointer;
     }

@@ -42,7 +42,12 @@
   &__kebab-nav {
   }
 }
+@include small-mobile{
+  .main-menu__item {
+    display: none;
 
+  }
+}
 
 
 @include mobile {

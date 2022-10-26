@@ -1,2 +1,32 @@
 @import "mixins";
 
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__author {
+    margin-right: auto;
+  }
+
+  &__content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__data {
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  &__reactions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+
+    &-icon {
+      padding: 8px;
+    }
+  }
+}

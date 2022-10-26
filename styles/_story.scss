@@ -12,7 +12,7 @@
   &__content {
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(3, 20px) 1fr;
+    //grid-template-rows: repeat(3, 20px) 1fr;
     gap: 8px;
 
     &-topic {

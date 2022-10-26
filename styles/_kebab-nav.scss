@@ -20,7 +20,15 @@
 
   }
 }
+@include small-mobile{
+  .kebab-nav {
+    display: flex;
 
+    &__item {
+      display: none;
+    }
+  }
+}
 @include mobile {
   .kebab-nav {
     display: flex;

@@ -31,7 +31,8 @@
       padding: 20px;
 
       &:target {
-        display: block;
+        display: grid;
+        gap: 16px;
 
       }
 
