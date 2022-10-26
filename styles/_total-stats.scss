@@ -1,0 +1,39 @@
+@import "mixins";
+
+.total-stats {
+  position: relative;
+  display: flex;
+
+  &__circle {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+
+    &-value {
+      font-size: 48px;
+      &--title {
+        font-size: 16px;
+      }
+
+      &--number {
+        font-size: 25px;
+      }
+    }
+  }
+}

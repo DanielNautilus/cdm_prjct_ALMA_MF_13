@@ -18,12 +18,21 @@
 @mixin base-text{
 
 }
+//Аналог flex-shrink 0
+@mixin grow-shrink-0{
+  display: table-cell;
+  white-space: nowrap;
+}
+
 @mixin button-clear {
   appearance: none;
   border: none;
   background: none;
 }
-
+@mixin normalizing{
+  overflow: hidden;
+  max-width: 1920px;
+}
 //@mixin links-clear {
 //  text-decoration: none;
 //  &:focus{

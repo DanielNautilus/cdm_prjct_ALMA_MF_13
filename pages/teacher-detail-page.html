@@ -6,7 +6,7 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>ALMA MF 13 | Преподаватели</title>
-    <link href="../teacher-detail-page.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -95,54 +95,95 @@
 
         <div class="teacher-container__info-block statistic-info">
             <div class="statistic-info__content">
-                <div class="statistic-info__content-container" style="background: #11CDEF">
-                    <div class="statistic-info__content-container-total total-stats">
-                        Общая оценка
+                <div class="statistic-info__content-container">
+                    <div class="statistic-info__content-container-total-stats total-stats">
+                        <svg class="total-stats__circle">
+                            <circle cx="calc(50%)" cy="calc(50%)" fill="none" r="110" stroke="var(--secondary-color)" stroke-width="9"></circle>
+
+                        </svg>
+                        <div class="total-stats__content">
+                            <div class="total-stats__content-value">
+                                5.0
+                            </div>
+                            <div class="total-stats__content-value total-stats__content-value--title">
+                                Общая характеристика
+                            </div>
+
+<!--                            TODO: Спросить я не уверен, что я так надо... тут же будет просто переключения таба-->
+                            <button class="total-stats__content-value total-stats__content-value--number button button--link">
+                                50 Отзывов
+                            </button>
+
+                        </div>
                     </div>
                     <div class="statistic-info__content-container-rating rating">
-                        Рейтинг
+                        <a href="#" class="rating__item">
+                            2 Место среди 2000 преподавателей
+                        </a>
                     </div>
                 </div>
-                <div class="statistic-info__content-container" style="background: #000000">
+                <div class="statistic-info__content-container">
                     <div class="statistic-info__content-container-criteria criteria">
                         <div class="criteria__container">
                             <span class="criteria__container-property">
                                 Предметная компетенция
                             </span>
                             <div class="criteria__container-value">
-                                <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
                             </div>
                         </div>
                         <div class="criteria__container">
                             <div class="criteria__container-property">
-                                бля...я хуй знает
+                                Объективность оценки знаний студентов
                             </div>
                             <div class="criteria__container-value">
-                                <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
                             </div>
                         </div>
                         <div class="criteria__container">
                             <div class="criteria__container-property">
-                                aaa
+                                Ясность излагаемого материала
                             </div>
                             <div class="criteria__container-value">
-                                <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
                             </div>
                         </div>
                         <div class="criteria__container">
                             <div class="criteria__container-property">
-                                aaa
+                                Знание возможностей новых информационных технологий и умение использовать их в
+                                процессе
+                                обучения
                             </div>
                             <div class="criteria__container-value">
-                                <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
                             </div>
                         </div>
                         <div class="criteria__container">
                             <div class="criteria__container-property">
-                                aaa
+                                Толерантное отношение к студенту
                             </div>
                             <div class="criteria__container-value">
-                                <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i> <i>#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
+                                <i class="criteria__container-value-stars icon icon--star">#</i>
                             </div>
                         </div>
                     </div>

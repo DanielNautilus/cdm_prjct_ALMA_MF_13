@@ -7,15 +7,27 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 16px;
+    padding: 4px 8px;
+
+    //TODO: Возможно стоит пересмотреть структуру и оставить
+    // лишь value ибо данные элементы практически одинаковые, с парочкой отличий, мб просто сделать различия через модификаторы?
 
     &-property {
-      text-align: center;
-      display: table-cell;
-      white-space: nowrap;
+      text-align: left;
+      //Аналог flex-shrink
+      //@include grow-shrink-0
     }
 
     &-value {
+      @include grow-shrink-0;
+      text-align: center;
+      &-stars{
 
+      }
     }
   }
 }

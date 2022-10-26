@@ -1,0 +1,10 @@
+@import "mixins";
+
+.rating {
+  display: flex;
+  &__item{
+justify-content: center;
+    align-content: center;
+  }
+
+}
