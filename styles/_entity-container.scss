@@ -1,22 +1,30 @@
 @import "mixins";
 
-.entity-container{
-
+.entity-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  //grid-template-rows: repeat(auto-fill, minmax(340px, 1fr));
   &__item {
-    box-sizing: border-box;
     display: grid;
     gap: 8px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 240px 100px;
+
+    //grid-template-rows: 240px repeat(auto-fill, 50px);
+    grid-template-rows: 240px;
+
+    //Если что то сломается у верхней используй эту
+    //grid-template-rows: 240px 100px;
     text-decoration: none;
     cursor: pointer;
     padding: 8px;
     border: 1px solid var(--info-bg-color);
     background: var(--info-bg-color);
     border-radius: 16px;
-    &:hover{
+
+    &:hover {
       background: var(--secondary-color);
-      .entity-container__name{
+
+      .entity-container__name {
         color: var(--info-text-color);
       }
     }
@@ -28,8 +36,11 @@
     height: 240px;
     border-radius: 25%;
   }
-  &__name{
-  //min-height: 40px;
+
+  &__name {
+    //max-height: 50px;
+    overflow: hidden;
+    //min-height: 40px;
     text-align: center;
     text-decoration: none;
     //Не изменять - ошибка, незя перииспользовать в других сущностях

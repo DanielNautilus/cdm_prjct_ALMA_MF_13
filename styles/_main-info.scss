@@ -10,6 +10,10 @@
     border-radius: 25%;
   }
 
+  &__heading {
+
+  }
+
   &__content {
     display: grid;
     gap: 8px;
@@ -49,6 +53,9 @@
 
     &__content {
 
+      &-heading {
+        text-align: center;
+      }
 
       &-container {
         gap: 4px;
@@ -83,7 +90,9 @@
     }
 
     &__content {
-
+      &-heading {
+        text-align: center;
+      }
 
       &-container {
         gap: 4px;
