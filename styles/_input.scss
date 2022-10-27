@@ -1,69 +1,114 @@
 .input {
   position: relative;
   display: flex;
+  gap: 8px;
 
-    &__radio {
+  &__select {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    min-height: 32px;
+    padding: 6px 8px;
 
+    &-opinion {
+      color: var(--primary-text-color);
+      background: var(--secondary-color);
     }
 
-    &__checkbox {
-
+    &:focus {
+      padding: 5px 7px;
+      outline: 0;
+      border: 1px solid var(--info-text-color);
     }
+  }
 
-    &__text {
-      display: block;
-      width: 100%;
-      border: 0;
-      border-radius: 8px;
-      min-height: 32px;
-      padding: 6px 8px;
+  &__radio {
 
-      &:focus {
-        padding: 5px 7px;
-        outline: 0;
-        border: 1px solid var(--info-text-color);
-      }
+  }
 
-      &--big-size {
-        padding: 8px 12px;
-        min-height: 48px;
+  &__checkbox {
 
-        &:focus {
-          padding: 6px 10px;
-          outline: 0;
-          border: 2px solid var(--info-text-color);
-        }
-      }
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    min-height: 32px;
+    padding: 6px 8px;
+
+    &:focus {
+      padding: 5px 7px;
+      outline: 0;
+      border: 1px solid var(--info-text-color);
     }
-
-    &__password {
-
-    }
-
-
-  &__label {
 
     &--big-size {
+      padding: 8px 12px;
+      min-height: 48px;
 
-    }
-
-    &--small-size {
-
-    }
-  }
-
-  &__icon {
-    //color: var(--info-text-color);
-    //Вот тут надо что то придумать....
-    position: absolute;
-    right: 16px;
-    //right: -70%;
-    top: 33%;
-    &--danger{
-      color: var(--negative-color);
-    }
-    &:hover{
-      cursor: pointer;
+      &:focus {
+        padding: 6px 10px;
+        outline: 0;
+        border: 2px solid var(--info-text-color);
+      }
     }
   }
-}
+
+  &__password {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    min-height: 32px;
+    padding: 6px 8px;
+
+    &:focus {
+      padding: 5px 7px;
+      outline: 0;
+      border: 1px solid var(--info-text-color);
+    }
+
+    &--big-size {
+      padding: 8px 12px;
+      min-height: 48px;
+
+      &:focus {
+        padding: 6px 10px;
+        outline: 0;
+        border: 2px solid var(--info-text-color);
+      }
+    }
+
+  }
+
+
+    &__label {
+      line-height: 32px;
+
+      &--big-size {
+        line-height: 48px;
+      }
+
+
+    }
+
+    &__icon {
+      //color: var(--info-text-color);
+      //Вот тут надо что то придумать....
+      position: absolute;
+      right: 16px;
+      //right: -70%;
+      top: 33%;
+
+      &--danger {
+        color: var(--negative-color);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }

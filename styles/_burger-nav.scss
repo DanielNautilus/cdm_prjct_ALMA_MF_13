@@ -1,6 +1,6 @@
 @import "mixins";
 
-.kebab-nav {
+.burger-nav {
   flex: 1 1 0;
   justify-content: flex-end;
 
@@ -21,7 +21,7 @@
   }
 }
 @include small-mobile{
-  .kebab-nav {
+  .burger-nav {
     display: flex;
 
     &__item {
@@ -30,7 +30,7 @@
   }
 }
 @include mobile {
-  .kebab-nav {
+  .burger-nav {
     display: flex;
 
     &__item {
@@ -40,7 +40,7 @@
 }
 
 @include desktop {
-  .kebab-nav {
+  .burger-nav {
     display: none;
   }
 }

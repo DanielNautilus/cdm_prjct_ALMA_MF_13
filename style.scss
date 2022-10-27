@@ -13,7 +13,7 @@
 @import "styles/header";
 @import "styles/main-body";
 @import "styles/main-info";
-@import "styles/kebab-nav";
+@import "styles/burger-nav";
 @import "styles/footer";
 @import "styles/information";
 @import "styles/usage";
@@ -36,11 +36,13 @@
 @import "styles/detail-page-container";
 @import "styles/administration";
 @import "styles/reaction";
+@import "styles/pop-up";
 
 
 :root {
   --attent-bg-color: #282E6ACC;
   --primary-bg-color: #FAEBD7FF;
+  --black-color: #000000;
   --info-bg-color: #525F7F;
   --primary-text-color: #fff;
   --heading-text-color:#32325D;

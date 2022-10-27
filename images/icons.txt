@@ -9,3 +9,5 @@ Up finger - <i class="fa-regular fa-thumbs-up"></i>
 Down finger - <i class="fa-regular fa-thumbs-down"></i>
 
 X mark - <i class="fa-solid fa-xmark"></i>
+
+Burger - <i class="fa-solid fa-burger"></i>
