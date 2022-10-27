@@ -2,9 +2,10 @@
 
 .teachers-container {
   display: grid;
+  gap: 16px;
 
   &__filters {
-
+    border-radius: 16px;
   }
 
   &__search-block {
@@ -20,14 +21,32 @@
   }
 
 }
+@include small-mobile{
+  .teachers-container {
 
+
+    &__filters {
+    }
+
+    &__search-block {
+
+    }
+
+    &__search {
+
+    }
+
+    &__entity-container {
+
+    }
+  }
+}
 @include mobile {
   .teachers-container {
 
 
     &__filters {
-      display: none;
-
+      //display: none;
     }
 
     &__search-block {
@@ -63,7 +82,6 @@
     }
 
     &__search {
-      position: sticky;
 
     }
 

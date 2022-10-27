@@ -53,11 +53,15 @@
   }
 
   &__icon {
-    color: var(--info-text-color);
+    //color: var(--info-text-color);
+    //Вот тут надо что то придумать....
     position: absolute;
-    right: 1%;
+    right: 16px;
     //right: -70%;
-    top: 20%;
+    top: 33%;
+    &--danger{
+      color: var(--negative-color);
+    }
     &:hover{
       cursor: pointer;
     }

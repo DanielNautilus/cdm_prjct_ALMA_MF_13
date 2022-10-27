@@ -15,12 +15,12 @@
     text-transform: uppercase;
     &--mini{
       min-height: 30px;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   &__item{
     display: block;
-    padding: 14px;
+    padding: 16px;
     color: var(--primary-text-color);
     //display: flex;
     &:hover{

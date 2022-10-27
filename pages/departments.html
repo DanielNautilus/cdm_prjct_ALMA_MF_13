@@ -12,6 +12,7 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/4d921cf60d.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -50,7 +51,7 @@
             <h2 class="user__name">
                 man
             </h2>
-            <img alt="avatar" class="user__img" src="../images/avatar.png">
+            <i class=" fa-solid fa-user-tie"></i>
         </a>
 
     </header>
@@ -77,9 +78,10 @@
 
         <!--        </aside>-->
         <div class="department-container__search-block search-block">
-            <div class="department-container__search inputs">
-                <input class="inputs inputs__input inputs__input--text" placeholder="Искать" type="text">
-            </div>
+            <label class="department-container__search input">
+                <input class="input__text" placeholder="Искать" type="text">
+                <span class="input__icon">#</span>
+            </label>
 
             <div class="search-block__entity-container entity-container">
                 <a class="entity-container__item" href="#">

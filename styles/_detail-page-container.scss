@@ -1,14 +1,17 @@
 @import "mixins";
 
-.detail-page-container{
+.detail-page-container {
   display: grid;
-  &__info-block{
+
+  &__info-block {
     background: var(--info-bg-color);
     border: 1px solid var(--info-bg-color);
     border-radius: 8px;
     color: var(--primary-text-color);
+
   }
 }
+
 @include small-mobile {
   .detail-page-container {
 

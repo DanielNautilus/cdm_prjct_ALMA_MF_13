@@ -11,6 +11,7 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/4d921cf60d.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -49,7 +50,7 @@
             <h2 class="user__name">
                 man
             </h2>
-            <img alt="avatar" class="user__img" src="../images/avatar.png">
+            <i class=" fa-solid fa-user-tie"></i>
         </a>
 
     </header>
@@ -57,80 +58,80 @@
     <div class="wrapper__content teachers-container">
         <aside class="teachers-container__filters filters">
             <div class="filters__label"> Фильтры</div>
-            <label class="filters__item inputs">
-                <input class="inputs__input inputs__input--radio" type="radio"/>
+            <label class="filters__item input">
+                <input class="input__radio" type="radio"/>
                 <span>Все сущности</span>
             </label>
-            <label class="filters__item inputs">
-                <input class="inputs__input inputs__input--radio" type="radio"/>
+            <label class="filters__item input">
+                <input class="input__radio" type="radio"/>
                 <span>Технические</span>
             </label>
-            <label class="filters__item inputs">
-                <input class="inputs__input inputs__input--radio" type="radio"/>
+            <label class="filters__item input">
+                <input class="input__radio" type="radio"/>
                 <span>Гуманитарные</span>
             </label>
             <div class="filters__container">
                 <div class="filters__label filters__label--mini"> Институты/Факультеты</div>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">Все</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">Все</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">ФДП</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">ФДП</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">МФИТ</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">МФИТ</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">ФИИ </span>
-                    <i class="inputs__icon icon">#</i>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">ФИИ </span>
+                    <i class="input__icon input__icon--danger fa-solid fa-xmark"></i>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--text" placeholder="Введите институт или факультет"
+                <label class="filters__item input">
+                    <input class="input__text" placeholder="Введите институт или факультет"
                            type="text"/>
-                    <span class="inputs__label"></span>
+                    <span class="input__label"></span>
                 </label>
             </div>
 
             <div class="filters__container">
                 <div class="filters__label filters__label--mini"> Кафедры</div>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">Все</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">Все</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">АСОИУ</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">АСОИУ</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">АПП</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">АПП</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">КС</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">КС</span>
                 </label>
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--checkbox" type="checkbox"/>
-                    <span class="inputs__label">КС</span>
+                <label class="filters__item input">
+                    <input class="input input--checkbox" type="checkbox"/>
+                    <span class="input__label">КС</span>
                 </label>
 
 
-                <label class="filters__item inputs">
-                    <input class="inputs__input inputs__input--text" placeholder="Введите кафедру" type="text"/>
-                    <span class="inputs__label"></span>
+                <label class="filters__item input">
+                    <input class="input__text" placeholder="Введите кафедру" type="text"/>
+                    <span class="input__label"></span>
                 </label>
             </div>
         </aside>
         <div class="teachers-container__search-block search-block">
 
-            <div class="search-block__search inputs">
-                <input class="inputs__input inputs__input--text" placeholder="Искать"
+            <label class="search-block__search input">
+                <input class="input__text" placeholder="Искать"
                        type="text">
-            </div>
+            </label>
 
 
             <div class="search-block__entity-container entity-container">

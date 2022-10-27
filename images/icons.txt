@@ -1,0 +1,11 @@
+Star - <i class="fa-regular fa-star"></i>
+
+Edit - <i class="fa-pen-to-square"></i>
+
+Person - <i class=" fa-solid fa-user-tie"></i>
+
+Up finger - <i class="fa-regular fa-thumbs-up"></i>
+
+Down finger - <i class="fa-regular fa-thumbs-down"></i>
+
+X mark - <i class="fa-solid fa-xmark"></i>

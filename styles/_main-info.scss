@@ -1,7 +1,19 @@
 @import "mixins";
 
 .main-info {
+  position: relative;
+
   display: grid;
+
+  &__icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   &__img {
 
@@ -41,7 +53,10 @@
 
 @include small-mobile {
   .main-info {
-
+    &__icon {
+      right: 8px;
+      top: 8px;
+    }
     grid-template-rows: 240px 1fr;
     grid-template-columns: 1fr;
     gap: 8px;
@@ -81,6 +96,10 @@
 
 
   .main-info {
+    &__icon {
+      right: 16px;
+      top: 16px;
+    }
     grid-template-columns: 240px 1fr;
 
     gap: 16px;
@@ -120,7 +139,10 @@
     grid-template-areas: "main-info__img main-info__content";
     grid-template-columns: 240px 1fr;
     gap: 24px;
-
+    &__icon {
+      right: 16px;
+      top: 16px;
+    }
     &__img {
       grid-area: main-info__img;
     }

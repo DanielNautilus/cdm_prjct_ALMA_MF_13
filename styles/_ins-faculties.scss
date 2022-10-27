@@ -5,6 +5,7 @@
   gap: 16px;
 
   &__filters {
+    border-radius: 16px;
 
   }
 
@@ -29,6 +30,47 @@
     &__filters {
       display: none;
 
+    }
+
+    &__search-block {
+
+    }
+
+    &__search {
+
+    }
+
+    &__entity-container {
+
+    }
+  }
+}
+@include small-mobile{
+  .ins-faculties {
+
+
+    &__filters {
+    }
+
+    &__search-block {
+
+    }
+
+    &__search {
+
+    }
+
+    &__entity-container {
+
+    }
+  }
+}
+@include mobile {
+  .ins-faculties {
+
+
+    &__filters {
+      //display: none;
     }
 
     &__search-block {

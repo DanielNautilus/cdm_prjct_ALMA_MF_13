@@ -1,14 +1,14 @@
-.user{
+.user {
   display: flex;
 
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   text-decoration: none;
 
   color: var(--primary-text-color);
 
-  &__name{
+  &__name {
     text-decoration: none;
     text-transform: uppercase;
     font: 20px/24px Roboto;
@@ -20,21 +20,25 @@
     //text-overflow: ellipsis;
     overflow: hidden;
   }
-  &__img{
+
+  &__img {
     width: 40px;
     height: 40px;
-    background-size:cover;
+    background-size: cover;
     border-radius: 25%;
     object-fit: cover;
-    &--large{
+
+    &--large {
       width: 160px;
       height: 160px;
     }
-    &--big{
+
+    &--big {
       width: 60px;
       height: 60px;
     }
-    &--small{
+
+    &--small {
       width: 32px;
       height: 32px;
     }

@@ -33,7 +33,11 @@
 }
 
 @include small-mobile {
-
+  .criteria{
+    &__container {
+      grid-template-columns: auto;
+    }
+  }
 }
 
 @include mobile {

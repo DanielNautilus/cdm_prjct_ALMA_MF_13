@@ -90,11 +90,11 @@
 }
 .filters__label--mini {
   min-height: 30px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .filters__item {
   display: block;
-  padding: 14px;
+  padding: 16px;
   color: var(--primary-text-color);
 }
 .filters__item:hover {
@@ -162,20 +162,19 @@
 }
 .general-info__main-words {
   color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+  text-align: center;
 }
 .general-info__word {
   font-weight: 600;
 }
 .general-info__short-description {
+  color: var(--positive-color);
   text-align: center;
 }
 
 .user {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   text-decoration: none;
@@ -275,10 +274,12 @@
   border: 2px solid var(--info-text-color);
 }
 .input__icon {
-  color: var(--info-text-color);
   position: absolute;
-  right: 1%;
-  top: 20%;
+  right: 16px;
+  top: 33%;
+}
+.input__icon--danger {
+  color: var(--negative-color);
 }
 .input__icon:hover {
   cursor: pointer;
@@ -287,6 +288,9 @@
 .ins-faculties {
   display: grid;
   gap: 16px;
+}
+.ins-faculties__filters {
+  border-radius: 16px;
 }
 @media screen and (min-width: 680px) and (max-width: 1075px) {
   .ins-faculties__filters {
@@ -326,6 +330,8 @@
   flex: 3;
 }
 .header__user {
+  justify-content: flex-end;
+  align-items: center;
   margin-left: auto;
   flex: 1;
 }
@@ -339,7 +345,16 @@
 }
 
 .main-info {
+  position: relative;
   display: grid;
+}
+.main-info__icon {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.main-info__icon:hover {
+  cursor: pointer;
 }
 .main-info__img {
   width: 240px;
@@ -371,6 +386,10 @@
     grid-template-columns: 1fr;
     gap: 8px;
   }
+  .main-info__icon {
+    right: 8px;
+    top: 8px;
+  }
   .main-info__img {
     margin: 0 auto;
   }
@@ -388,6 +407,10 @@
     grid-template-columns: 240px 1fr;
     gap: 16px;
   }
+  .main-info__icon {
+    right: 16px;
+    top: 16px;
+  }
   .main-info__content-heading {
     text-align: center;
   }
@@ -402,6 +425,10 @@
     grid-template-areas: "main-info__img main-info__content";
     grid-template-columns: 240px 1fr;
     gap: 24px;
+  }
+  .main-info__icon {
+    right: 16px;
+    top: 16px;
   }
   .main-info__img {
     grid-area: main-info__img;
@@ -492,6 +519,9 @@
     align-items: center;
     gap: 8px;
   }
+  .usage__item {
+    max-width: 100%;
+  }
 }
 .summary {
   display: grid;
@@ -507,7 +537,7 @@
   padding: 16px 8px;
   background: var(--info-bg-color);
   border: 1px solid var(--info-bg-color);
-  border-radius: 18px;
+  border-radius: 16px;
 }
 .summary__item:nth-child(even) {
   margin-right: auto;
@@ -526,6 +556,14 @@
   color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 680px) {
+  .summary__item:nth-child(even) {
+    margin-right: 0;
+  }
+  .summary__item:nth-child(odd) {
+    margin-left: 0;
+  }
+}
 .rating {
   display: flex;
   justify-content: center;
@@ -590,11 +628,10 @@
 }
 .teachers-container {
   display: grid;
+  gap: 16px;
 }
-@media screen and (min-width: 680px) and (max-width: 1075px) {
-  .teachers-container__filters {
-    display: none;
-  }
+.teachers-container__filters {
+  border-radius: 16px;
 }
 @media screen and (min-width: 1075px) {
   .teachers-container {
@@ -608,9 +645,6 @@
   }
   .teachers-container__search-block {
     grid-area: teachers-container__search-block;
-  }
-  .teachers-container__search {
-    position: sticky;
   }
 }
 .total-stats {
@@ -662,6 +696,11 @@
   display: table-cell;
   white-space: nowrap;
   text-align: center;
+}
+@media screen and (max-width: 680px) {
+  .criteria__container {
+    grid-template-columns: auto;
+  }
 }
 .link--cleared {
   color: var(--primary-text-color);
@@ -859,7 +898,6 @@
   color: var(--primary-text-color);
 }
 .overall-ratings__container {
-  padding: 16px;
   display: grid;
   background: var(--info-bg-color);
   border: 1px solid var(--info-bg-color);
@@ -873,8 +911,7 @@
 }
 .overall-ratings__container-content {
   display: grid;
-  gap: 16px;
-  justify-content: center;
+  margin: 0 auto;
 }
 .overall-ratings__container-content-item {
   max-width: 260px;
@@ -1017,7 +1054,7 @@
 }
 
 :root {
-  --attent-bg-color:rgba(40, 46, 106, .8);
+  --attent-bg-color: #282E6ACC;
   --primary-bg-color: #FAEBD7FF;
   --info-bg-color: #525F7F;
   --primary-text-color: #fff;
