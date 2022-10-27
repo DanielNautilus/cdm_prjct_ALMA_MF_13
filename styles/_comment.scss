@@ -30,3 +30,18 @@
     }
   }
 }
+
+@include small-mobile {
+  .comment {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__author {
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+    }
+
+  }
+}

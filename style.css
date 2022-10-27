@@ -189,8 +189,6 @@
   font-weight: 400;
   margin: 0 0;
   flex-shrink: 0;
-  max-width: 140px;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .user__img {
@@ -655,8 +653,6 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4px;
-  border: 1px solid var(--primary-text-color);
-  border-radius: 16px;
   padding: 4px 8px;
 }
 .criteria__container-property {
@@ -777,6 +773,13 @@
 .estimates__person {
   margin-right: auto;
 }
+@media screen and (max-width: 680px) {
+  .estimates__person {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+}
 .story {
   display: flex;
   flex-direction: column;
@@ -806,6 +809,18 @@
   padding: 8px;
 }
 
+@media screen and (max-width: 680px) {
+  .story {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .story__author {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+}
 .comment {
   display: flex;
   flex-direction: column;
@@ -827,6 +842,18 @@
   padding: 8px;
 }
 
+@media screen and (max-width: 680px) {
+  .comment {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .comment__author {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+}
 .overall-ratings {
   display: grid;
   color: var(--primary-text-color);
@@ -973,6 +1000,22 @@
     margin: 0 auto;
   }
 }
+.reaction {
+  border-radius: 8px;
+}
+.reaction--positive {
+  background: var(--positive-color);
+}
+.reaction--negative {
+  background: var(--negative-color);
+}
+.reaction__icon {
+  padding: 8px;
+}
+.reaction__value {
+  padding: 12px;
+}
+
 :root {
   --attent-bg-color:rgba(40, 46, 106, .8);
   --primary-bg-color: #FAEBD7FF;
@@ -981,6 +1024,8 @@
   --heading-text-color:#32325D;
   --secondary-color: #11CDEF;
   --info-text-color: #525F7F;
+  --negative-color:#BB2A1DC8;
+  --positive-color:#458245;
 }
 
 *, :before, :after {

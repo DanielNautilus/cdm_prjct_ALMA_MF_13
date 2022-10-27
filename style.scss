@@ -35,6 +35,7 @@
 @import "styles/scroll";
 @import "styles/detail-page-container";
 @import "styles/administration";
+@import "styles/reaction";
 
 
 :root {
@@ -45,6 +46,8 @@
   --heading-text-color:#32325D;
   --secondary-color: #11CDEF;
   --info-text-color: #525F7F;
+  --negative-color:#BB2A1DC8;
+  --positive-color:#458245;
 }
 *,:before,:after{
   box-sizing: border-box!important;

@@ -14,3 +14,18 @@
 
   }
 }
+
+@include small-mobile{
+  .estimates {
+
+    &__person {
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+    }
+
+    &__content {
+
+    }
+  }
+}
