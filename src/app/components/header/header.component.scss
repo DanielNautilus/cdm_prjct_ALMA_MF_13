@@ -1,0 +1,35 @@
+@import "../../mixins/_mixins.scss";
+
+.header {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--attent-bg-color);
+  height: 72px; //may be correct, check _wrapper
+
+  &__logo {
+    flex: 1;
+  }
+
+  &__main-menu {
+    flex: 3;
+  }
+
+  &__user {
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    flex: 1;
+  }
+
+}
+
+
+
+@include mobile {
+
+}
+@include desktop {
+
+}

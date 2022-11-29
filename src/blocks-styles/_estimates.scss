@@ -1,0 +1,31 @@
+@import "../app/mixins/mixins";
+
+.estimates {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+
+  &__person {
+    margin-right: auto;
+  }
+
+  &__content {
+
+  }
+}
+
+@include small-mobile{
+  .estimates {
+
+    &__person {
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+    }
+
+    &__content {
+
+    }
+  }
+}

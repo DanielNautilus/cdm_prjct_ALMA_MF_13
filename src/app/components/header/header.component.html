@@ -1,0 +1,67 @@
+<header class="wrapper__header header">
+
+  <a class="header__logo logo"
+     routerLink="/"
+  >
+    <img alt="logo"
+         class="logo__img"
+         src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/"
+    >
+    <h1 class="logo__name"
+    >
+      alma mf 13
+    </h1>
+  </a>
+
+
+  <!--Todo: доделать выделение при роутинге-->
+
+  <nav class="header__main-menu main-menu">
+    <a class="main-menu__item"
+       routerLink="/institutes-faculties"
+    >Институты/Факультеты</a>
+    <a class="main-menu__item"
+       href="/departments"
+    >Кафедры</a>
+    <a class="main-menu__item"
+       href="/teachers">Преподаватели</a>
+    <a class="main-menu__item"
+       href="/rating">Рейтинги</a>
+    <div class="main-menu__burger-nav burger-nav">
+      <i class="burger-nav__icon fa-solid fa-burger"></i>
+
+      <div class="burger-nav__container">
+        <a class="burger-nav__item"
+           routerLink="/institutes-faculties"
+        >
+          Институты/Факультеты
+        </a>
+        <a class="burger-nav__item"
+           routerLink="/departments"
+        >
+          Кафедры
+        </a>
+        <a class="burger-nav__item"
+           routerLink="/teachers"
+        >
+          Преподаватели
+        </a>
+        <a class="burger-nav__item"
+           routerLink="/rating"
+        >
+          Рейтинги
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <a class="header__user user" href="javascript:void(0);">
+    <h2 class="user__name">
+      man
+    </h2>
+    <i class=" fa-solid fa-user-tie"></i>
+  </a>
+
+
+</header>

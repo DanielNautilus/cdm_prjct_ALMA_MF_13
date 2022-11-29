@@ -1,0 +1,46 @@
+@import "../app/mixins/mixins";
+
+.burger-nav {
+  flex: 1 1 0;
+  justify-content: flex-end;
+
+  &__icon {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__item {
+
+  }
+}
+@include small-mobile{
+  .burger-nav {
+    display: flex;
+
+    &__item {
+      display: none;
+    }
+  }
+}
+@include mobile {
+  .burger-nav {
+    display: flex;
+
+    &__item {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .burger-nav {
+    display: none;
+  }
+}

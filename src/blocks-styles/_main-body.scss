@@ -1,0 +1,9 @@
+@import "../app/mixins/mixins";
+.main-body{
+  margin: 0 auto;
+  font: 18px/20px "Roboto Light";
+  color: var(--primary-text-color);
+  scrollbar-color: #458245 #714826; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;  /* толщина */
+  //color: var(--primary-text-color);
+}

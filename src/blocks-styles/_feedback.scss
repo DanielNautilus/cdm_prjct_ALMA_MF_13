@@ -1,0 +1,95 @@
+@import "../app/mixins/mixins";
+
+.feedback {
+
+  &--stats {
+  }
+
+
+  &--comment {
+
+  }
+
+  &__container {
+    display: grid;
+    //justify-content: center;
+    //align-items: center;
+    //gap: 16px;
+    max-height: 50vh;
+    overflow-y: auto;
+
+    &-item {
+
+      margin: 16px;
+
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--primary-text-color);
+
+      &--story {
+        margin: 16px auto;
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    }
+  }
+}
+
+@include small-mobile {
+  .feedback {
+
+    &--stats {
+    }
+
+
+    &--comment {
+
+    }
+
+    &__container {
+
+      &-item {
+        //padding: 1px;
+
+        &--story {
+          margin: 16px auto;
+
+          width: 99%;
+
+        }
+
+      }
+    }
+  }
+}
+
+@include mobile {
+  .feedback {
+
+    &--stats {
+    }
+
+
+    &--comment {
+
+    }
+
+    &__container {
+
+      &-item {
+
+        &--story {
+          margin: 16px auto;
+
+          width: 90%;
+
+        }
+
+      }
+    }
+  }
+}

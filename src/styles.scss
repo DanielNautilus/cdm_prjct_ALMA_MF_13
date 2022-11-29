@@ -1,0 +1,56 @@
+/* You can add global blocks-mixins to this file, and also import other style files */
+@import "blocks-styles/_administration.scss";
+@import "blocks-styles/pop-up.scss";
+@import "blocks-styles/reaction.scss";
+@import "blocks-styles/scroll.scss";
+@import "blocks-styles/comment.scss";
+@import "blocks-styles/story.scss";
+@import "blocks-styles/feedback.scss";
+@import "blocks-styles/rating.scss";
+@import "blocks-styles/link.scss";
+@import "blocks-styles/logo.scss";
+@import "blocks-styles/button.scss";
+@import "blocks-styles/burger-nav.scss";
+@import "blocks-styles/wrapper.scss";
+@import "blocks-styles/filtres.scss";
+@import "blocks-styles/summary.scss";
+@import "blocks-styles/usage.scss";
+@import "blocks-styles/information.scss";
+@import "blocks-styles/footer.scss";
+@import "blocks-styles/header.scss";
+@import "blocks-styles/estimates.scss";
+@import "blocks-styles/input.scss";
+@import "blocks-styles/teachers-container.scss";
+@import "blocks-styles/detail-page-container.scss";
+@import "blocks-styles/general-info.scss";
+@import "blocks-styles/main-body.scss";
+@import "blocks-styles/department-container.scss";
+@import "blocks-styles/entity-container.scss";
+@import "blocks-styles/ins-faculties.scss";
+@import "blocks-styles/main-info.scss";
+@import "blocks-styles/user.scss";
+@import "blocks-styles/overall-ratings.scss";
+@import "blocks-styles/icon.scss";
+@import "blocks-styles/tabs.scss";
+@import "blocks-styles/total-stats.scss";
+@import "blocks-styles/criteria.scss";
+@import "blocks-styles/criteria.scss";
+@import "blocks-styles/main-menu.scss";
+@import "blocks-styles/statistic-info.scss";
+@import "blocks-styles/search-block.scss";
+:root {
+  --attent-bg-color: #282E6ACC;
+  --primary-bg-color: #FAEBD7FF;
+  --black-color: #000000;
+  --info-bg-color: #525F7F;
+  --primary-text-color: #fff;
+  --heading-text-color:#32325D;
+  --secondary-color: #11CDEF;
+  --info-text-color: #525F7F;
+  --negative-color:#BB2A1DC8;
+  --positive-color:#458245;
+}
+*,:before,:after{
+  box-sizing: border-box!important;
+}
+//Todo: добавить переменный вынести бордер радиусы и т.п. и 240px

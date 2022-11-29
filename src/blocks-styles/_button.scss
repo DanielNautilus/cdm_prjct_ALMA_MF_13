@@ -1,0 +1,26 @@
+@import "../app/mixins/mixins";
+
+.button {
+  &:hover{
+    cursor: pointer;
+  }
+  &--link {
+    @include button-clear;
+    color: var(--primary-text-color);
+  }
+
+  &--icon {
+    @include button-clear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+
+    &--active,
+    &:hover {
+      color: red;
+    }
+  }
+}

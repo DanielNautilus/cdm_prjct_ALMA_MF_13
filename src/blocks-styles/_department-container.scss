@@ -1,0 +1,54 @@
+@import "../app/mixins/mixins";
+
+.department-container {
+
+  //Если делаеть с фильтрами, копипаст со стр инст-фак
+
+  &__search-block {
+
+  }
+
+  &__search {
+
+  }
+
+  &__entity-container {
+
+  }
+
+}
+
+@include mobile {
+  .department-container {
+
+    &__search-block {
+
+    }
+
+    &__search {
+
+    }
+
+    &__ins-fac-container {
+
+    }
+  }
+}
+
+@include desktop {
+
+  .department-container {
+
+    &__search-block {
+
+    }
+
+    &__search {
+
+    }
+
+    &__ins-fac-container {
+
+    }
+  }
+}
