@@ -1,3 +1,4 @@
+
 .user {
   display: flex;
 
@@ -41,6 +42,37 @@
     &--small {
       width: 32px;
       height: 32px;
+    }
+  }
+}
+@include small-mobile{
+  .user {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+
+    &__name {
+      display: none;
+    }
+
+    &__img {
+
+      &--large {
+
+      }
+
+      &--big {
+
+      }
+
+      &--small {
+
+      }
     }
   }
 }

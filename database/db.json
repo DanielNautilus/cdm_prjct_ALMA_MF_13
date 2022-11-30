@@ -1,0 +1,138 @@
+{
+  "institute-facultie": [
+    {
+      "id": "697dc338-3136-4408-906c-ea2360d8b8cb",
+      "first_name": "Ellissa",
+      "last_name": "Robichon",
+      "email": "erobichon0@zdnet.com",
+      "gender": "Female",
+      "ip_address": "136.20.129.218"
+    },
+    {
+      "id": "1c18ae00-ad8d-4e69-8c14-6e6991656c24",
+      "first_name": "Georges",
+      "last_name": "Kirkwood",
+      "email": "gkirkwood1@reference.com",
+      "gender": "Male",
+      "ip_address": "0.82.27.194"
+    },
+    {
+      "id": "fc663f55-28a5-477f-b1cf-6b1e7290058a",
+      "first_name": "Hodge",
+      "last_name": "Pauncefort",
+      "email": "hpauncefort2@auda.org.au",
+      "gender": "Male",
+      "ip_address": "68.83.197.0"
+    },
+    {
+      "id": "740108ab-204b-4583-8b53-989339e06b55",
+      "first_name": "Clevey",
+      "last_name": "Kirley",
+      "email": "ckirley3@nationalgeographic.com",
+      "gender": "Male",
+      "ip_address": "68.181.183.53"
+    }
+  ],
+  "department": [
+    {
+      "id": "697dc338-3136-4408-906c-ea2360d8b8cb",
+      "first_name": "Ellissa",
+      "last_name": "Robichon",
+      "email": "erobichon0@zdnet.com",
+      "gender": "Female",
+      "ip_address": "136.20.129.218"
+    },
+    {
+      "id": "1c18ae00-ad8d-4e69-8c14-6e6991656c24",
+      "first_name": "Georges",
+      "last_name": "Kirkwood",
+      "email": "gkirkwood1@reference.com",
+      "gender": "Male",
+      "ip_address": "0.82.27.194"
+    },
+    {
+      "id": "fc663f55-28a5-477f-b1cf-6b1e7290058a",
+      "first_name": "Hodge",
+      "last_name": "Pauncefort",
+      "email": "hpauncefort2@auda.org.au",
+      "gender": "Male",
+      "ip_address": "68.83.197.0"
+    },
+    {
+      "id": "740108ab-204b-4583-8b53-989339e06b55",
+      "first_name": "Clevey",
+      "last_name": "Kirley",
+      "email": "ckirley3@nationalgeographic.com",
+      "gender": "Male",
+      "ip_address": "68.181.183.53"
+    }
+  ],
+  "teacher": [
+    {
+      "id": "697dc338-3136-4408-906c-ea2360d8b8cb",
+      "first_name": "Ellissa",
+      "last_name": "Robichon",
+      "email": "erobichon0@zdnet.com",
+      "gender": "Female",
+      "ip_address": "136.20.129.218"
+    },
+    {
+      "id": "1c18ae00-ad8d-4e69-8c14-6e6991656c24",
+      "first_name": "Georges",
+      "last_name": "Kirkwood",
+      "email": "gkirkwood1@reference.com",
+      "gender": "Male",
+      "ip_address": "0.82.27.194"
+    },
+    {
+      "id": "fc663f55-28a5-477f-b1cf-6b1e7290058a",
+      "first_name": "Hodge",
+      "last_name": "Pauncefort",
+      "email": "hpauncefort2@auda.org.au",
+      "gender": "Male",
+      "ip_address": "68.83.197.0"
+    },
+    {
+      "id": "740108ab-204b-4583-8b53-989339e06b55",
+      "first_name": "Clevey",
+      "last_name": "Kirley",
+      "email": "ckirley3@nationalgeographic.com",
+      "gender": "Male",
+      "ip_address": "68.181.183.53"
+    }
+  ],
+  "user": [
+    {
+      "id": "697dc338-3136-4408-906c-ea2360d8b8cb",
+      "first_name": "Ellissa",
+      "last_name": "Robichon",
+      "email": "erobichon0@zdnet.com",
+      "gender": "Female",
+      "ip_address": "136.20.129.218"
+    },
+    {
+      "id": "1c18ae00-ad8d-4e69-8c14-6e6991656c24",
+      "first_name": "Georges",
+      "last_name": "Kirkwood",
+      "email": "gkirkwood1@reference.com",
+      "gender": "Male",
+      "ip_address": "0.82.27.194"
+    },
+    {
+      "id": "fc663f55-28a5-477f-b1cf-6b1e7290058a",
+      "first_name": "Hodge",
+      "last_name": "Pauncefort",
+      "email": "hpauncefort2@auda.org.au",
+      "gender": "Male",
+      "ip_address": "68.83.197.0"
+    },
+    {
+      "id": "740108ab-204b-4583-8b53-989339e06b55",
+      "first_name": "Clevey",
+      "last_name": "Kirley",
+      "email": "ckirley3@nationalgeographic.com",
+      "gender": "Male",
+      "ip_address": "68.181.183.53"
+    }
+  ]
+}

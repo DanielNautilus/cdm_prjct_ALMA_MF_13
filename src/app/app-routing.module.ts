@@ -8,6 +8,7 @@ import {RatingsComponent} from "./pages/ratings/ratings.component";
 import {TeachersSectionComponent} from "./pages/teachers-section/teachers-section.component";
 import {TeacherDetailPageComponent} from "./pages/teacher-detail-page/teacher-detail-page.component";
 import {UserDetailPageComponent} from "./pages/user-detail-page/user-detail-page.component";
+import {DepartmentDetailPageComponent} from "./pages/department-detail-page/department-detail-page.component";
 
 const routes: Routes = [
   //Todo: сделать гуарды, продемать как будет выглядеть стр конкретной сущности
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'department',
-    component: DepartmentsSectionComponent
+    component: DepartmentDetailPageComponent
   },
   {
     path: 'institutes-faculties',
@@ -48,7 +49,7 @@ const routes: Routes = [
     component: UserDetailPageComponent
   }
 ];
-
+//Todo: каждая помеченная сущность является просто наследником от родителя выше
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
