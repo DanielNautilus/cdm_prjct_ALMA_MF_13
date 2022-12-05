@@ -1,67 +1,12 @@
 <div class="popup">
   <div class="popup__body">
     <div class="popup__content">
-      <a class="popup__close" (click)="MService.close()">
+
+      <a class="popup__close" (click)="close.emit()">
         <i class="fa-solid fa-xmark"></i>
       </a>
-      <h2 class="popup__title">Оценка преподавателя</h2>
+      <h2 class="popup__title">{{title}}</h2>
       <ng-content></ng-content>
-<!--      <form class="popup__context">-->
-<!--        <label class="popup__input input">-->
-<!--          <span class="input__label">Предметная компетенция</span>-->
-<!--          <select class="input__select">-->
-<!--            <option class="input__select-opinion" value="0">Не могу дать оценку</option>-->
-<!--            <option class="input__select-opinion" value="5">Отлично</option>-->
-<!--            <option class="input__select-opinion" value="4">Хорошо</option>-->
-<!--            <option class="input__select-opinion" value="3">Удовлетворительно</option>-->
-<!--            <option class="input__select-opinion" value="2">Не Удовлетворительно</option>-->
-<!--          </select>-->
-<!--        </label>-->
-<!--        <label class="popup__input input">-->
-<!--          <span class="input__label">Объективность оценки знаний студентов</span>-->
-<!--          <select class="input__select">-->
-<!--            <option class="input__select-opinion" value="Не могу дать оценку">Не могу дать оценку</option>-->
-<!--            <option class="input__select-opinion" value="Отлично">Отлично</option>-->
-<!--            <option class="input__select-opinion" value="Хорошо">Хорошо</option>-->
-<!--            <option class="input__select-opinion" value="Удовлетворительно">Удовлетворительно</option>-->
-<!--            <option class="input__select-opinion" value="Достаточно">Достаточно</option>-->
-<!--            <option class="input__select-opinion" value="Не Удовлетворительно">Не Удовлетворительно</option>-->
-<!--          </select>-->
-<!--        </label>-->
-<!--        <label class="popup__input input">-->
-<!--          <span class="input__label">Ясность излагаемого материала</span>-->
-<!--          <select class="input__select">-->
-<!--            <option class="input__select-opinion" value="Не могу дать оценку">Не могу дать оценку</option>-->
-<!--            <option class="input__select-opinion" value="Отлично">Отлично</option>-->
-<!--            <option class="input__select-opinion" value="Хорошо">Хорошо</option>-->
-<!--            <option class="input__select-opinion" value="Удовлетворительно">Удовлетворительно</option>-->
-<!--            <option class="input__select-opinion" value="Достаточно">Достаточно</option>-->
-<!--            <option class="input__select-opinion" value="Не Удовлетворительно">Не Удовлетворительно</option>-->
-<!--          </select>-->
-<!--        </label>-->
-<!--        <label class="popup__input input">-->
-<!--          <span class="input__label">Знание возможностей новых информационных технологий</span>-->
-<!--          <select class="input__select">-->
-<!--            <option class="input__select-opinion" value="Не могу дать оценку">Не могу дать оценку</option>-->
-<!--            <option class="input__select-opinion" value="Отлично">Отлично</option>-->
-<!--            <option class="input__select-opinion" value="Хорошо">Хорошо</option>-->
-<!--            <option class="input__select-opinion" value="Удовлетворительно">Удовлетворительно</option>-->
-<!--            <option class="input__select-opinion" value="Достаточно">Достаточно</option>-->
-<!--            <option class="input__select-opinion" value="Не Удовлетворительно">Не Удовлетворительно</option>-->
-<!--          </select>-->
-<!--        </label>-->
-<!--        <label class="popup__input input">-->
-<!--          <span class="input__label">Толерантное отношение к студенту</span>-->
-<!--          <select class="input__select">-->
-<!--            <option class="input__select-opinion" value="Не могу дать оценку">Не могу дать оценку</option>-->
-<!--            <option class="input__select-opinion" value="Отлично">Отлично</option>-->
-<!--            <option class="input__select-opinion" value="Хорошо">Хорошо</option>-->
-<!--            <option class="input__select-opinion" value="Удовлетворительно">Удовлетворительно</option>-->
-<!--            <option class="input__select-opinion" value="Не Удовлетворительно">Не Удовлетворительно</option>-->
-<!--          </select>-->
-<!--        </label>-->
-<!--        <button class="popup__button button button&#45;&#45;link" type="submit">Подтвердить</button>-->
-<!--      </form>-->
     </div>
   </div>
 </div>

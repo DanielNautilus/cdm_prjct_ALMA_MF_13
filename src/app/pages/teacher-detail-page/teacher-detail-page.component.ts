@@ -21,6 +21,9 @@ export class TeacherDetailPageComponent {
   public teacher!: ITeacher
   public institutefacultie?: IInstituteFacultie
   public department?: IDepartment
+  public modal_creation_estimate:boolean = false
+  public modal_creation_story:boolean = false
+  public modal_creation_comment:boolean = false
 
   constructor(private TService: TeacherService,
               private institutionalisesService: InstituteFacultieService,

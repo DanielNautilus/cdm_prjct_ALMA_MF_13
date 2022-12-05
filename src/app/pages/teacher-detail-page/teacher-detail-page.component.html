@@ -150,7 +150,22 @@
     </div>
   </div>
   <div class="statistic-info__feadback">
-    <button (click)="MService.open()" class="button button--link">Дать характеристику</button>
+    <button (click)="modal_creation_estimate = true"
+            class="button button--link"
+    >Дать характеристику
+    </button>
+  </div>
+  <div class="statistic-info__feadback">
+    <button (click)="modal_creation_story = true"
+            class="button button--link"
+    >Оставить историю
+    </button>
+  </div>
+  <div class="statistic-info__feadback">
+    <button (click)="modal_creation_comment = true"
+            class="button button--link"
+    >Оставить комментарий
+    </button>
   </div>
 </div>
 
@@ -175,10 +190,23 @@
   </div>
 
 </div>
-<app-modal *ngIf="MService.isVisible | async">
-  <app-create-estimate></app-create-estimate>
+<app-modal *ngIf="modal_creation_estimate"
+           title="Оценка преподавателю"
+           (close)="modal_creation_estimate = false"
+>
+  <app-create-estimate (close)="modal_creation_estimate = false"></app-create-estimate>
 </app-modal>
-<app-modal *ngIf="MService.isVisible | async">
-  dwadawawdawd
+<app-modal *ngIf="modal_creation_story"
+           title="Оставить историю"
+           (close)="modal_creation_story = false"
+>
+  <app-create-story (close)="modal_creation_story = false"></app-create-story>
 </app-modal>
-<!--</div>-->
+
+<app-modal *ngIf="modal_creation_comment"
+           title="Оставить комментарий"
+           (close)="modal_creation_comment = false"
+>
+  <app-create-estimate (close)="modal_creation_comment = false"></app-create-estimate>
+</app-modal>
+

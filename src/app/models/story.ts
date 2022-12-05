@@ -1,7 +1,7 @@
 import {IReputation} from "./reputation";
 
 export interface IStory {
-  id?: number
+  id?: string
   author_id: string
   source_id: string //это сурс где распологается данный элемент
   date_creation: string // это не строка а дата

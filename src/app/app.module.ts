@@ -26,6 +26,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { CreateEstimateComponent } from './components/create-estimate/create-estimate.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { AuthentificationComponent } from './components/authentification/authentification.component';
+import { CreateStoryComponent } from './components/create-story/create-story.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AuthentificationComponent } from './components/authentification/authent
     CommentsComponent,
     ModalComponent,
     CreateEstimateComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    CreateStoryComponent
   ],
     imports: [
         BrowserModule,

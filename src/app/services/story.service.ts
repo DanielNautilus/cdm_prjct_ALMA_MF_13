@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {ErrorService} from "./error.service";
 import {catchError, Observable, throwError} from "rxjs";
-import {IComment} from "../models/comment";
 import {IStory} from "../models/story";
 
 @Injectable({
@@ -28,5 +27,8 @@ export class StoryService {
   getBySource(source_id: string): Observable<IStory[]> {
     return this.http.get<IStory[]>(`${this.url}?source_id=${source_id}`)
       .pipe(catchError(this.errorHandler.bind(this)))
+  }
+  post(story: IStory):Observable<IStory>{
+    return this.http.post<IStory>(`${this.url}`,story)
   }
 }

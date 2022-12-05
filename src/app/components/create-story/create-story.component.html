@@ -1,0 +1,38 @@
+<form [formGroup]="form"
+      (ngSubmit)="submit()"
+      class="popup__context"
+>
+  <label class="popup__input input">
+    <span class="input__label">Дата истории</span>
+    <input type="date"
+           class="input__select"
+           formControlName="date_story"
+    />
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Заголовок</span>
+    <input class="input__select"
+           formControlName="topic"
+           type="text"
+    >
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Дисциплина</span>
+    <input class="input__select"
+           formControlName="discipline"
+           type="text"
+    >
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Содержание</span>
+    <textarea class="input__select"
+              formControlName="content"
+    ></textarea>
+  </label>
+  <button
+    class="popup__button button button--link"
+    type="submit"
+  >
+    Подтвердить
+  </button>
+</form>

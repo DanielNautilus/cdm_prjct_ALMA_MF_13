@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {IEstimate} from "../../models/estimate";
 import {ModalService} from "../../services/modal.service";
@@ -33,6 +33,7 @@ export class CreateEstimateComponent implements OnInit {
   // Спросить как сдалть так - я хз как обходить модалку и получать данные
   // @Input() user?: IUser
   // @Input() teacher?: ITeacher
+  @Output() close = new EventEmitter<void>()
 
   constructor(public MService: ModalService,
               private activeRout: ActivatedRoute,
@@ -49,9 +50,6 @@ export class CreateEstimateComponent implements OnInit {
   }
 
   submit() {
-
-    // console.log(this.form.value)
-
     const estimate: IEstimate = {
       author_id: "f08a1b96-545c-47f2-9e35-25ec647b0b33",
       date_creation: `${new Date().toLocaleDateString()}`,
@@ -63,11 +61,12 @@ export class CreateEstimateComponent implements OnInit {
       source_id: `${this.teacher?.id}`,
       summary_result:
         (+this.form.value.value1!
-        + +this.form.value.value2!
-        + +this.form.value.value3!
-        + +this.form.value.value4!
-        + +this.form.value.value5!)/5
+          + +this.form.value.value2!
+          + +this.form.value.value3!
+          + +this.form.value.value4!
+          + +this.form.value.value5!) / 5
     }
-    this.EService.post(estimate).subscribe(()=>this.MService.close())
+
+     this.EService.post(estimate).subscribe(()=>this.close.emit())
   }
 }
