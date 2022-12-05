@@ -6,5 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  // не юзается
   title = 'cdm_prjct_ALMA_MF_13';
 }

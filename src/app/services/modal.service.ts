@@ -5,6 +5,7 @@ import {BehaviorSubject} from "rxjs";
   providedIn: 'root'
 })
 export class ModalService {
+  // Погугли какие подходы есть для создания модалки. Очень хороший способ через angularCDK, но там может быть сложновато
   isVisible = new BehaviorSubject<boolean>(false)
 
   constructor() {

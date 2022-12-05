@@ -23,6 +23,8 @@ export class CreateEstimateComponent implements OnInit {
   public institutefacultie?: IInstituteFacultie
   public department?: IDepartment
 
+  // Не стоит так называть поля формы, сам потом запутаешься, что каждое из низ делает. Юзай нормальные имена
+  // Так же советую явно типизировать форму, чтоб IDE подсказывала в случае чего
   form = new FormGroup({
     value1: new FormControl<number>(0),
     value2: new FormControl<number>(0),
@@ -44,6 +46,9 @@ export class CreateEstimateComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<void> {
+    // Ни в коем случае. Функции из lifeCycle не должны ничего возвращать и не должны быть ассинхронными, это может привести к неправильно инициализации компонента и тестировать будет тяжелее
+    // Зачем переводить observable в промис? Observable очень мощная концепция и основная для rxjs, соответственно очень важна для ангуляра.
+    // Правильнее было бы изучить хотя бы базу rxjs, без этого никак
     this.teacher = await lastValueFrom(this.TService.get(this.activeRout.snapshot.paramMap.get('id')!))
     this.institutefacultie = await lastValueFrom(this.institutionalisesService.get(this.teacher.institute_faculties_id))
     this.department = await lastValueFrom(this.departmentService.get(this.teacher.department_id))
@@ -53,6 +58,9 @@ export class CreateEstimateComponent implements OnInit {
     const estimate: IEstimate = {
       author_id: "f08a1b96-545c-47f2-9e35-25ec647b0b33",
       date_creation: `${new Date().toLocaleDateString()}`,
+      // Если использовать formArray вместо formGroup это могло выглядеть так
+      // points: form.value
+      // Не нужно явно приводить к числу, ибо у тебя и так контрол имеет тип number. Еще один плюс в пользу типизированных форм
       points: [+this.form.value.value1!,
         +this.form.value.value2!,
         +this.form.value.value3!,
@@ -67,6 +75,7 @@ export class CreateEstimateComponent implements OnInit {
           + +this.form.value.value5!) / 5
     }
 
+      // Правильная идея
      this.EService.post(estimate).subscribe(()=>this.close.emit())
   }
 }
