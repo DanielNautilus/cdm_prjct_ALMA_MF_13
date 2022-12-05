@@ -38,19 +38,22 @@
 @import "blocks-styles/main-menu.scss";
 @import "blocks-styles/statistic-info.scss";
 @import "blocks-styles/search-block.scss";
+
 :root {
   --attent-bg-color: #282E6ACC;
   --primary-bg-color: #FAEBD7FF;
   --black-color: #000000;
   --info-bg-color: #525F7F;
   --primary-text-color: #fff;
-  --heading-text-color:#32325D;
+  --heading-text-color: #32325D;
   --secondary-color: #11CDEF;
   --info-text-color: #525F7F;
-  --negative-color:#BB2A1DC8;
-  --positive-color:#458245;
+  --negative-color: #BB2A1DC8;
+  --positive-color: #458245;
 }
-*,:before,:after{
-  box-sizing: border-box!important;
+
+*, :before, :after {
+  box-sizing: border-box !important;
 }
+
 //Todo: добавить переменный вынести бордер радиусы и т.п. и 240px

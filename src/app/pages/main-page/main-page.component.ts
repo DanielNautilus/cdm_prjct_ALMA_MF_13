@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostBinding} from '@angular/core';
 
 @Component({
   selector: 'app-main-page',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent {
-
+  @HostBinding('class.wrapper__content') nameElement = true
+  @HostBinding('class.information') nameBlock = true
 }

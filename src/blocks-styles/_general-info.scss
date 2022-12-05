@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .general-info {
   display: flex;
@@ -33,6 +33,7 @@
     text-align: center;
   }
 }
-@include small-mobile{
+
+@include small-mobile {
 
 }

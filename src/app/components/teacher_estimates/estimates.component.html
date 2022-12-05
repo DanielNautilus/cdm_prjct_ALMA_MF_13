@@ -1,0 +1,93 @@
+<!--<div class="tabs__container-item feedback" id="estimate">-->
+<!--                    <label class="feedback__input input">-->
+<!--                        <input class="input__text"/>-->
+<!--                        <span class="input__icon">X</span>-->
+<!--                    </label>-->
+<div *ngIf="estimatesTeacherContainer.length !==0;else empty" class="feedback__container">
+  <div *ngFor="let estimate of estimatesTeacherContainer"
+       class="feedback__container-item estimates"
+  >
+    <div class="estimates__person user">
+
+      <img alt="avatar" class="user__img" src="{{estimate?.author?.image_url}}">
+      <h2 class="user__name">
+        {{estimate?.author?.nick}}
+      </h2>
+    </div>
+    <div class="estimates__content criteria">
+      <!--      <div class="criteria__container">-->
+      <!--        <span class="criteria__container-property">-->
+      <!--          Предметная компетенция-->
+      <!--        </span>-->
+      <!--        <div class="criteria__container-value">-->
+      <!--          <i *ngFor="let star of starsNumbers!;let i = index"-->
+      <!--             [class.criteria__container-value-stars&#45;&#45;selected]="i < estimate?.estimate?.points![0]"-->
+      <!--             class="criteria__container-value-stars fa-regular fa-star"></i>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="criteria__container">-->
+      <!--        <div class="criteria__container-property">-->
+      <!--          Объективность оценки знаний студентов-->
+      <!--        </div>-->
+      <!--        <div class="criteria__container-value">-->
+      <!--          <i *ngFor="let star of starsNumbers!;let i = index"-->
+      <!--             [class.criteria__container-value-stars&#45;&#45;selected]="i < estimate?.estimate?.points![0]"-->
+      <!--             class="criteria__container-value-stars fa-regular fa-star"></i>-->
+
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="criteria__container">-->
+      <!--        <div class="criteria__container-property">-->
+      <!--          Ясность излагаемого материала-->
+      <!--        </div>-->
+      <!--        <div class="criteria__container-value">-->
+      <!--          <i *ngFor="let star of starsNumbers!;let i = index"-->
+      <!--             [class.criteria__container-value-stars&#45;&#45;selected]="i < estimate?.estimate?.points![0]"-->
+      <!--             class="criteria__container-value-stars fa-regular fa-star"></i>-->
+
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="criteria__container">-->
+      <!--        <div class="criteria__container-property">-->
+      <!--          Знание возможностей новых информационных технологий и умение использовать их в-->
+      <!--          процессе-->
+      <!--          обучения-->
+      <!--        </div>-->
+      <!--        <div class="criteria__container-value">-->
+      <!--          <i *ngFor="let star of starsNumbers!;let i = index"-->
+      <!--             [class.criteria__container-value-stars&#45;&#45;selected]="i < estimate?.estimate?.points![0]"-->
+      <!--             class="criteria__container-value-stars fa-regular fa-star"></i>-->
+
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="criteria__container">-->
+      <!--        <div class="criteria__container-property">-->
+      <!--          Толерантное отношение к студенту-->
+      <!--        </div>-->
+      <!--        <div class="criteria__container-value">-->
+      <!--          <i *ngFor="let star of starsNumbers!;let i = index"-->
+      <!--             [class.criteria__container-value-stars&#45;&#45;selected]="i < estimate?.estimate?.points![0]"-->
+      <!--             class="criteria__container-value-stars fa-regular fa-star"></i>-->
+
+      <!--        </div>-->
+      <!--      </div>-->
+      <div *ngFor="let criteria of starsNumbers!" class="criteria__container">
+        <span [ngSwitch]=criteria class="criteria__container-property">
+          <ng-template ngSwitchCase="0">Предметная компетенция</ng-template>
+          <ng-template ngSwitchCase="1">Объективность оценки знаний студентов</ng-template>
+          <ng-template ngSwitchCase="2">Ясность излагаемого материала</ng-template>
+          <ng-template ngSwitchCase="3">Знание возможностей новых информационных технологий и умение использовать их впроцессеобучения</ng-template>
+          <ng-template ngSwitchCase="4">Толерантное отношение к студенту</ng-template>
+        </span>
+        <div class="criteria__container-value">
+          <i *ngFor="let star of starsNumbers!;let i = index"
+             [class.criteria__container-value-stars--selected]="i < estimate?.estimate?.points![criteria]"
+             class="criteria__container-value-stars fa-regular fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<ng-template class="feedback__container" #empty>Нету</ng-template>
+<!--</div>-->

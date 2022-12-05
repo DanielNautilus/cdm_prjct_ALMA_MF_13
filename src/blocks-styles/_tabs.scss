@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .tabs {
 
@@ -59,7 +59,7 @@
   }
 }
 
-@include small-mobile{
+@include small-mobile {
   .tabs {
 
     &__navigation {
@@ -100,6 +100,6 @@
   }
 }
 
-@include mobile{
+@include mobile {
 
 }

@@ -1,69 +1,24 @@
+<!--<div class="wrapper__content ins-faculties">-->
+<app-filter></app-filter>
 
-
-  <div class="wrapper__content ins-faculties">
-    <aside class="ins-faculties__filters filters">
-      <div class="filters__label"> Фильтры</div>
-
-      <label class="filters__item">
-        <input type="radio"/>
-        <span>Все сущности</span>
-      </label>
-      <label class="filters__item">
-        <input type="radio"/>
-        <span>Технические</span>
-      </label>
-      <label class="filters__item">
-        <input type="radio"/>
-        <span>Гуманитерные</span>
-      </label>
-
-    </aside>
-    <div class="ins-faculties__search-block search-block">
-      <label class="search-block__search input">
-        <input class="input__text" placeholder="Искать" type="text">
-        <span class="input__icon">#</span>
-      </label>
-      <!--            TODO:мб сделать статус с приоритетом в правой верхней части картинки?Лучше не надо наверн....-->
-
-      <div class="search-block__entity-container entity-container">
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-        <a class="search-block__item entity-container__item" href="#">
-          <img alt="alt" class="search-block__img entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-          <div class="search-block__name entity-container__name">Институт электроники и светотехники</div>
-        </a>
-
-      </div>
+<div class="ins-faculties__search-block search-block">
+  <label class="search-block__search input">
+    <input class="input__text" placeholder="Искать" type="search">
+    <span class="input__icon">#</span>
+  </label>
+  <div *ngIf="institutes.length !== 0;else elseBlock" class="search-block__entity-container entity-container">
+    <div *ngFor="let institute of institutes"
+         class="search-block__item entity-container__item"
+         [routerLink]="['','institutes-faculties', institute.id]"
+    >
+      <img alt="{{institute.abbreviation}}"
+           class="search-block__img entity-container__img"
+           src="{{institute.image_url}}"
+      />
+      <div class="search-block__name entity-container__name">{{institute.name}}</div>
     </div>
-
   </div>
+  <ng-template #elseBlock>Content to render when condition is false.</ng-template>
+</div>
+
+<!--</div>-->

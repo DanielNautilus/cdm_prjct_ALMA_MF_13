@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .total-stats {
   position: relative;
@@ -27,6 +27,7 @@
 
     &-value {
       font-size: 48px;
+
       &--title {
         font-size: 16px;
       }

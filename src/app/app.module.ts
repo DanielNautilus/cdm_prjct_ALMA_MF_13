@@ -16,6 +16,16 @@ import {UserDetailPageComponent} from './pages/user-detail-page/user-detail-page
 import {MainPageComponent} from './pages/main-page/main-page.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
+import { SearchComponent } from './components/search/search.component';
+import { FilterComponent } from './components/filter/filter.component';
+import {HttpClientModule} from "@angular/common/http";
+import { EstimatesComponent } from './components/teacher_estimates/estimates.component';
+import { StoriesComponent } from './components/teacher_stories/stories.component';
+import { CommentsComponent } from './components/teacher_comments/comments.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { CreateEstimateComponent } from './components/create-estimate/create-estimate.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { AuthentificationComponent } from './components/authentification/authentification.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +40,22 @@ import {FooterComponent} from './components/footer/footer.component';
     UserDetailPageComponent,
     MainPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent,
+    FilterComponent,
+    EstimatesComponent,
+    StoriesComponent,
+    CommentsComponent,
+    ModalComponent,
+    CreateEstimateComponent,
+    AuthentificationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

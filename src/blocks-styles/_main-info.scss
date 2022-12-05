@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .main-info {
   position: relative;
@@ -57,6 +57,7 @@
       right: 8px;
       top: 8px;
     }
+
     grid-template-rows: 240px 1fr;
     grid-template-columns: 1fr;
     gap: 8px;
@@ -100,6 +101,7 @@
       right: 16px;
       top: 16px;
     }
+
     grid-template-columns: 240px 1fr;
 
     gap: 16px;
@@ -139,10 +141,12 @@
     grid-template-areas: "main-info__img main-info__content";
     grid-template-columns: 240px 1fr;
     gap: 24px;
+
     &__icon {
       right: 16px;
       top: 16px;
     }
+
     &__img {
       grid-area: main-info__img;
     }

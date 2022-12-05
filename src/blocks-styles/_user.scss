@@ -45,7 +45,8 @@
     }
   }
 }
-@include small-mobile{
+
+@include small-mobile {
   .user {
     display: flex;
 

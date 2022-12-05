@@ -1,0 +1,34 @@
+<!--<div class="tabs__container-item feedback" id="comment">-->
+<label class="feedback__input input">
+  <input type="text"
+         class="input__text"
+  />
+  <i class="fa-solid fa-xmark"></i>
+</label>
+
+<div *ngIf="commentsTeacherContainer!.length !==0;else empty" class="feedback__container">
+  <div *ngFor="let comment of commentsTeacherContainer!"
+       class="feedback__container-item comment"
+  >
+    <div class="comment__author user">
+      <img alt="{{comment.author?.nick}}" class="user__img" src="{{comment?.author?.image_url}}">
+      <h2 class="user__name">{{comment?.author?.nick}}</h2>
+    </div>
+    <div class="comment__content">
+      {{comment?.comment?.content}}
+    </div>
+    <div class="comment__data">{{comment?.comment?.date_creation | date:'M/d/yy'}}</div>
+    <div class="comment__reactions">
+      <i class="story__reactions-icon story__reactions-icon--plus fa-regular">
+        +{{comment?.comment?.reputation?.plus}}
+      </i>
+      <i class="story__reactions-icon story__reactions-icon--plus fa-regular fa-thumbs-up"></i>
+      <i class="story__reactions-icon story__reactions-icon--minus fa-regular">
+        -{{comment?.comment?.reputation?.minus}}
+      </i>
+      <i class="story__reactions-icon story__reactions-icon--minus fa-regular fa-thumbs-down"></i>
+    </div>
+  </div>
+</div>
+<ng-template #empty class="feedback__container">Отсутсвуют</ng-template>
+<!--</div>-->

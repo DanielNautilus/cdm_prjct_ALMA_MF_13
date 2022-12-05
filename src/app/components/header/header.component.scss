@@ -1,4 +1,4 @@
-@import "../../../global/mixins";
+@import "../../mixins";
 
 .header {
   display: flex;
@@ -26,10 +26,10 @@
 }
 
 
-
 @include mobile {
 
 }
+
 @include desktop {
 
 }

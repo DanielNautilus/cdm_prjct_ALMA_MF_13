@@ -1,29 +1,33 @@
-@import "../global/mixins";
+@import "src/app/mixins";
 
-.filters{
+.filters {
   //display: grid;
   //gap: 16px;
   background: var(--info-bg-color);
-  &__container{
-    border-top:1px solid var(--primary-text-color);
+
+  &__container {
+    border-top: 1px solid var(--primary-text-color);
   }
-  &__label{
+
+  &__label {
     color: var(--primary-text-color);
     padding: 8px 0;
     min-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    &--mini{
+
+    &--mini {
       min-height: 30px;
       font-size: 16px;
     }
   }
-  &__item{
-    display: block;
+
+  &__item {
+    display: flex;
     padding: 16px;
     color: var(--primary-text-color);
     //display: flex;
-    &:hover{
+    &:hover {
       background: var(--secondary-color);
       cursor: pointer;
     }

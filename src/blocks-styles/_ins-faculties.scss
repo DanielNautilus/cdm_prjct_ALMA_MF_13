@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .ins-faculties {
   display: grid;
@@ -45,7 +45,8 @@
     }
   }
 }
-@include small-mobile{
+
+@include small-mobile {
   .ins-faculties {
 
 
@@ -65,6 +66,7 @@
     }
   }
 }
+
 @include mobile {
   .ins-faculties {
 
@@ -95,9 +97,9 @@
 
     &__filters {
       grid-area: ins-faculties__filters;
-      border: 1px solid var(--info-bg-color);
+      //border: 1px solid var(--info-bg-color);
       border-radius: 8px;
-      max-height: 200px;
+      //max-height: 200px;
     }
 
     &__search-block {

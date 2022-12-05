@@ -1,9 +1,10 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .reaction {
   border-radius: 8px;
+
   &--positive {
-    background:var(--positive-color);
+    background: var(--positive-color);
 
   }
 

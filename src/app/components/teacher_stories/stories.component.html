@@ -1,0 +1,27 @@
+<!--<div class="tabs__container-item feedback" id="story">-->
+  <div class="feedback__container">
+    <div *ngFor="let story of commentsTeacherContainer!" class="feedback__container-item feedback__container-item--story story">
+      <div class="story__author user">
+        <img alt="{{story?.author?.nick}}" class="user__img" src="{{story?.author?.image_url}}">
+        <h2 class="user__name">{{story?.author?.nick}}</h2>
+
+      </div>
+      <article class="story__content">
+        <h2 class="story__content-topic">{{story?.story?.topic}}</h2>
+        <div class="story__content-date">{{story?.story?.date_story}}</div>
+        <div class="story__content-discipline">Дисциплина: {{story?.story?.discipline}}</div>
+        <p class="story__content-message">{{story?.story?.content}}</p>
+      </article>
+      <div class="story__reactions reaction">
+        <i class="story__reactions-icon story__reactions-icon--plus fa-regular">
+          +{{story?.story?.reputation?.plus}}
+        </i>
+        <i class="story__reactions-icon story__reactions-icon--plus fa-regular fa-thumbs-up"></i>
+        <i class="story__reactions-icon story__reactions-icon--minus fa-regular">
+          -{{story?.story?.reputation?.minus}}
+        </i>
+        <i class="story__reactions-icon story__reactions-icon--minus fa-regular fa-thumbs-down"></i>
+      </div>
+    </div>
+  </div>
+<!--</div>-->

@@ -1,0 +1,63 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="popup__context">
+  <label class="popup__input input">
+    <span class="input__label">Предметная компетенция</span>
+    <select class="input__select"
+            formControlName="value1"
+    >
+      <option class="input__select-opinion" value=0>Не могу дать оценку</option>
+      <option class="input__select-opinion" value=5>Отлично</option>
+      <option class="input__select-opinion" value=4>Хорошо</option>
+      <option class="input__select-opinion" value=3>Удовлетворительно</option>
+      <option class="input__select-opinion" value=2>Не Удовлетворительно</option>
+    </select>
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Объективность оценки знаний студентов</span>
+    <select class="input__select"
+            formControlName="value2"
+    >
+      <option class="input__select-opinion" value=0>Не могу дать оценку</option>
+      <option class="input__select-opinion" value=5>Отлично</option>
+      <option class="input__select-opinion" value=4>Хорошо</option>
+      <option class="input__select-opinion" value=3>Удовлетворительно</option>
+      <option class="input__select-opinion" value=2>Не Удовлетворительно</option>
+    </select>
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Ясность излагаемого материала</span>
+    <select class="input__select"
+            formControlName="value3"
+    >
+      <option class="input__select-opinion" value=0>Не могу дать оценку</option>
+      <option class="input__select-opinion" value=5>Отлично</option>
+      <option class="input__select-opinion" value=4>Хорошо</option>
+      <option class="input__select-opinion" value=3>Удовлетворительно</option>
+      <option class="input__select-opinion" value=2>Не Удовлетворительно</option>
+    </select>
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Знание возможностей новых информационных технологий</span>
+    <select class="input__select"
+            formControlName="value4"
+    >
+      <option class="input__select-opinion" value=0>Не могу дать оценку</option>
+      <option class="input__select-opinion" value=5>Отлично</option>
+      <option class="input__select-opinion" value=4>Хорошо</option>
+      <option class="input__select-opinion" value=3>Удовлетворительно</option>
+      <option class="input__select-opinion" value=2>Не Удовлетворительно</option>
+    </select>
+  </label>
+  <label class="popup__input input">
+    <span class="input__label">Толерантное отношение к студенту</span>
+    <select class="input__select"
+            formControlName="value5"
+    >
+      <option class="input__select-opinion" value=0>Не могу дать оценку</option>
+      <option class="input__select-opinion" value=5>Отлично</option>
+      <option class="input__select-opinion" value=4>Хорошо</option>
+      <option class="input__select-opinion" value=3>Удовлетворительно</option>
+      <option class="input__select-opinion" value=2>Не Удовлетворительно</option>
+    </select>
+  </label>
+  <button class="popup__button button button--link" type="submit">Подтвердить</button>
+</form>

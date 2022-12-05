@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .statistic-info {
 
@@ -6,9 +6,10 @@
   flex-direction: column;
   gap: 16px;
   //@include normalizing;
-  &__heading{
+  &__heading {
     font-size: 20px;
   }
+
   &__content {
     display: flex;
     flex: 400px;
@@ -19,10 +20,12 @@
       display: grid;
       //padding: 8px;
       gap: 16px;
-      &-total-stats{
+
+      &-total-stats {
 
       }
-      &-rating{
+
+      &-rating {
 
       }
     }
@@ -40,9 +43,10 @@
 
 @include small-mobile {
   .statistic-info {
-    &__heading{
+    &__heading {
       text-align: center;
     }
+
     &__content {
       flex-direction: column;
 
@@ -67,9 +71,10 @@
 
 @include mobile {
   .statistic-info {
-    &__heading{
+    &__heading {
       text-align: center;
     }
+
     &__content {
       //flex-direction: column;
 

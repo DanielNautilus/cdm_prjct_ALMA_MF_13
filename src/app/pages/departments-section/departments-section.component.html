@@ -1,69 +1,21 @@
-<div class="wrapper__content department-container">
-  <!--      TODO:Стоит ли добавлять сюда фильтр? скорее всего не, мб потом переделать и добавить-->
-
-
-  <!--        <aside class="ins-faculties__filters filters">-->
-  <!--            <div class="filters__label"> Фильтры</div>-->
-
-  <!--            <label class="filters__item">-->
-  <!--                <input type="radio"/>-->
-  <!--                <span>Все сущности</span>-->
-  <!--            </label>-->
-  <!--            <label class="filters__item">-->
-  <!--                <input type="radio"/>-->
-  <!--                <span>Технические</span>-->
-  <!--            </label>-->
-  <!--            <label class="filters__item">-->
-  <!--                <input type="radio"/>-->
-  <!--                <span>Гуманитерные</span>-->
-  <!--            </label>-->
-
-  <!--        </aside>-->
-  <div class="department-container__search-block search-block">
-    <label class="department-container__search input">
-      <input class="input__text" placeholder="Искать" type="text">
-      <span class="input__icon">#</span>
-    </label>
-
-    <div class="search-block__entity-container entity-container">
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-      <a class="entity-container__item" href="#">
-        <img alt="alt" class="entity-container__img" src="https://steamuserimages-a.akamaihd.net/ugc/844839649408866634/AFE908B50170F0F8B2F096201F727F56CF2DA44B/">
-        <div class="entity-container__name">АСОИУ</div>
-      </a>
-
-    </div>
+<!--<div class="wrapper__content department-container">-->
+<div class="department-container__search-block search-block">
+  <label class="department-container__search input">
+    <input class="input__text" placeholder="Искать" type="search">
+    <!--      <span class="input__icon">#</span>-->
+  </label>
+  <div *ngIf="departments?.length !== 0;else empty"
+       class="entity-container search-block__entity-container ">
+    <a *ngFor="let department of departments"
+       class="entity-container__item"
+       [routerLink]="['/departments',department.id]"
+    >
+      <img alt="alt" class="entity-container__img"
+           src="{{department.image_url}}"/>
+      <div class="entity-container__name">{{department.abbreviation}}</div>
+    </a>
   </div>
-
+  <ng-template #empty>Нету</ng-template>
 </div>
+
+<!--</div>-->

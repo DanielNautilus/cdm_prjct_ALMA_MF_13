@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .main-menu {
   display: flex;
@@ -42,7 +42,8 @@
   &__burger-nav {
   }
 }
-@include small-mobile{
+
+@include small-mobile {
   .main-menu__item {
     display: none;
 

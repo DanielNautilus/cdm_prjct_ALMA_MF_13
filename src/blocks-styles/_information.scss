@@ -1,17 +1,21 @@
-@import "../global/mixins";
-.information{
+@import "../app/mixins";
+
+.information {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-  &__general-info{
+
+  &__general-info {
 
   }
-  &__usage{
+
+  &__usage {
     justify-content: center;
 
   }
-  &__summary{
+
+  &__summary {
 
   }
 }

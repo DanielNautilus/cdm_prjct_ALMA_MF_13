@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .wrapper {
   display: flex;
@@ -9,23 +9,26 @@
 
   /*max-width: 90%;*/
   background-color: var(--primary-bg-color);
-  &__header{
+
+  &__header {
     //@include normalizing;
 
     //height: 72px; //not correct
     padding: 16px 24px;
   }
-  &__content{
+
+  &__content {
     //@include normalizing;
 
     flex: 1;
-    padding:  24px 0;
+    padding: 24px 0;
     //flex:1;
     width: 90%;
 
     margin: auto;
   }
-  &__footer{
+
+  &__footer {
     //@include normalizing;
 
   }

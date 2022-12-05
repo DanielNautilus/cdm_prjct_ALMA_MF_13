@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .teachers-container {
   display: grid;
@@ -21,7 +21,8 @@
   }
 
 }
-@include small-mobile{
+
+@include small-mobile {
   .teachers-container {
 
 
@@ -41,6 +42,7 @@
     }
   }
 }
+
 @include mobile {
   .teachers-container {
 

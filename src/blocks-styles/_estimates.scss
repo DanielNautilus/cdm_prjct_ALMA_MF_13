@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .estimates {
   display: flex;
@@ -15,7 +15,7 @@
   }
 }
 
-@include small-mobile{
+@include small-mobile {
   .estimates {
 
     &__person {

@@ -1,9 +1,10 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .button {
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
+
   &--link {
     @include button-clear;
     color: var(--primary-text-color);

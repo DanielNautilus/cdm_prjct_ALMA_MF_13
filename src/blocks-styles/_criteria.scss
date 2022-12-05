@@ -1,4 +1,4 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
 .criteria {
   display: grid;
@@ -25,7 +25,8 @@
     &-value {
       @include grow-shrink-0;
       text-align: center;
-      &-stars{
+
+      &-stars {
 
       }
     }
@@ -33,7 +34,7 @@
 }
 
 @include small-mobile {
-  .criteria{
+  .criteria {
     &__container {
       grid-template-columns: auto;
     }

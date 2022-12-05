@@ -1,29 +1,44 @@
 import {Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
-import {map, Observable} from "rxjs";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {ErrorService} from "./error.service";
+import {catchError, Observable, throwError} from "rxjs";
+import {ITeacher} from "../models/teacher";
+import {IUser} from "../models/user";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  static url: string = 'http://localhost:5566/user'
+  public url: string = 'http://localhost:5566/user'
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+              private errorService: ErrorService) {
   }
-  create(){
 
+  private errorHandler(err: HttpErrorResponse) {
+    this.errorService.handle(err.message)
+    return throwError(() => err.message)
   }
-  update(){
 
-  }
-  get(){
-
-  }
-  getAll(){
+  create() {
 
   }
 
-  delete(){
+  update() {
+
+  }
+
+  get(id: string): Observable<IUser> {
+    return this.http.get<IUser>(`${this.url}/${id}`)
+      .pipe(catchError(this.errorHandler.bind(this)))
+  }
+
+  getAll(): Observable<IUser[]> {
+    return this.http.get<IUser[]>(`${this.url}`)
+      .pipe(catchError(this.errorHandler.bind(this)))
+  }
+
+  delete() {
 
   }
 }

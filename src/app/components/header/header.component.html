@@ -19,41 +19,58 @@
   <nav class="header__main-menu main-menu">
     <a class="main-menu__item"
        routerLink="/institutes-faculties"
+       routerLinkActive="main-menu__item--active"
+       [routerLinkActiveOptions]="{exact:true}"
     >Институты/Факультеты</a>
     <a class="main-menu__item"
-       href="/departments"
+       routerLink="/departments"
+       routerLinkActive="main-menu__item--active"
+       [routerLinkActiveOptions]="{exact:true}"
     >Кафедры</a>
     <a class="main-menu__item"
-       href="/teachers">Преподаватели</a>
-    <a class="main-menu__item"
-       href="/rating">Рейтинги</a>
-    <div class="main-menu__burger-nav burger-nav">
+       routerLink="/teachers"
+       routerLinkActive="main-menu__item--active"
+       [routerLinkActiveOptions]="{exact:true}"
+    >Преподаватели</a>
+<!--    <a class="main-menu__item"-->
+<!--       routerLink="/rating"-->
+<!--       routerLinkActive="main-menu__item&#45;&#45;active"-->
+<!--       [routerLinkActiveOptions]="{exact:true}"-->
+<!--    >Рейтинги</a>-->
+    <nav class="main-menu__burger-nav burger-nav">
       <i class="burger-nav__icon fa-solid fa-burger"></i>
-
       <div class="burger-nav__container">
         <a class="burger-nav__item"
            routerLink="/institutes-faculties"
+           routerLinkActive="burger-nav__item--active"
+           [routerLinkActiveOptions]="{exact:true}"
         >
           Институты/Факультеты
         </a>
         <a class="burger-nav__item"
            routerLink="/departments"
+           routerLinkActive="burger-nav__item--active"
+           [routerLinkActiveOptions]="{exact:true}"
         >
           Кафедры
         </a>
         <a class="burger-nav__item"
            routerLink="/teachers"
+           routerLinkActive="burger-nav__item--active"
+           [routerLinkActiveOptions]="{exact:true}"
         >
           Преподаватели
         </a>
-        <a class="burger-nav__item"
-           routerLink="/rating"
-        >
-          Рейтинги
-        </a>
+<!--        <a class="burger-nav__item"-->
+<!--           routerLink="/rating"-->
+<!--           routerLinkActive="burger-nav__item&#45;&#45;active"-->
+<!--           [routerLinkActiveOptions]="{exact:true}"-->
+<!--        >-->
+<!--          Рейтинги-->
+<!--        </a>-->
       </div>
 
-    </div>
+    </nav>
   </nav>
 
   <a class="header__user user"

@@ -1,10 +1,11 @@
-@mixin small-mobile{
+@mixin small-mobile {
   @media screen and (max-width: 680px) {
     @content
   }
 }
+
 @mixin mobile {
-  @media screen and (min-width:680px) and (max-width: 1075px) {
+  @media screen and (min-width: 680px) and (max-width: 1075px) {
     @content
   }
 
@@ -15,11 +16,13 @@
     @content
   }
 }
-@mixin base-text{
+
+@mixin base-text {
 
 }
+
 //Аналог flex-shrink 0
-@mixin grow-shrink-0{
+@mixin grow-shrink-0 {
   display: table-cell;
   white-space: nowrap;
 }
@@ -29,10 +32,12 @@
   border: none;
   background: none;
 }
-@mixin normalizing{
+
+@mixin normalizing {
   overflow: hidden;
   max-width: 1920px;
 }
+
 //@mixin links-clear {
 //  text-decoration: none;
 //  &:focus{

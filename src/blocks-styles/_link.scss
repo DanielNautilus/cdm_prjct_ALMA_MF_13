@@ -1,8 +1,8 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
-.link{
+.link {
 
-  &--cleared{
+  &--cleared {
     color: var(--primary-text-color);
     text-decoration: none;
   }

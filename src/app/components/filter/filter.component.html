@@ -1,0 +1,130 @@
+<!--TODO: Принимать флаг на число принимаемых фильтров-->
+<form *ngIf="true; else full" class="ins-faculties__filters filters">
+  <div class="filters__label"> Фильтры</div>
+  <label class="filters__item input">
+    <input name="filter_main"
+           class="input__radio"
+           type="radio"
+           checked
+    />
+    <span class="filters__input-label"
+    >Все сущности
+    </span>
+  </label>
+  <label class="filters__item input">
+    <input name="filter_main"
+           type="radio"
+           class="input__radio"
+    />
+    <span class="filters__input-label"
+    >Технические
+    </span>
+  </label>
+  <label class="filters__item input">
+    <input name="filter_main"
+           type="radio"
+           class="input__radio"
+    />
+    <span class="filters__input-label"
+    >Гуманитерные
+    </span>
+  </label>
+</form>
+
+<ng-template #full class="teachers-container__filters filters">
+  <div class="filters__label"> Фильтры</div>
+  <label class="filters__item input">
+    <input name="filter_main"
+           class="input__radio"
+           type="radio"
+           checked
+    />
+    <span class="filters__input-label"
+    >Все сущности
+    </span>
+  </label>
+  <label class="filters__item input">
+    <input name="filter_main"
+           type="radio"
+           class="input__radio"
+    />
+    <span class="filters__input-label"
+    >Технические
+    </span>
+  </label>
+  <label class="filters__item input">
+    <input name="filter_main"
+           type="radio"
+           class="input__radio"
+    />
+    <span class="filters__input-label"
+    >Гуманитерные
+    </span>
+  </label>
+  <div class="filters__container">
+    <div class="filters__label filters__label--mini"> Институты/Факультеты</div>
+    <label class="filters__item input">
+      <input class="input input--checkbox"
+             type="checkbox"
+      />
+      <span class="input__label"
+      >Все</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox"
+             type="checkbox"
+      />
+      <span class="input__label">ФДП</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox"
+             type="checkbox"
+      />
+      <span class="input__label">МФИТ</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox"
+             type="checkbox"
+      />
+      <span class="input__label">ФИИ </span>
+      <i class="input__icon input__icon--danger fa-solid fa-xmark"></i>
+    </label>
+    <label class="filters__item input">
+      <input class="input__text"
+             placeholder="Введите институт или факультет"
+             type="text"/>
+      <span class="input__label"></span>
+    </label>
+  </div>
+
+  <div class="filters__container">
+    <div class="filters__label filters__label--mini"> Кафедры</div>
+    <label class="filters__item input">
+      <input class="input input--checkbox" type="checkbox"/>
+      <span class="input__label">Все</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox" type="checkbox"/>
+      <span class="input__label">АСОИУ</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox" type="checkbox"/>
+      <span class="input__label">АПП</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox" type="checkbox"/>
+      <span class="input__label">КС</span>
+    </label>
+    <label class="filters__item input">
+      <input class="input input--checkbox" type="checkbox"/>
+      <span class="input__label">КС</span>
+    </label>
+
+
+    <label class="filters__item input">
+      <input class="input__text" placeholder="Введите кафедру" type="text"/>
+      <span class="input__label"></span>
+    </label>
+  </div>
+</ng-template>
+

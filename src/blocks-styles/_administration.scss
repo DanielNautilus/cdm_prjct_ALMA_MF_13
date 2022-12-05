@@ -1,9 +1,10 @@
-@import "../global/mixins";
+@import "../app/mixins";
 
-.administration{
-  &__heading{
+.administration {
+  &__heading {
     font-size: 20px;
   }
+
   &__content {
     //display: flex;
     //flex: 400px;
@@ -14,20 +15,24 @@
       display: grid;
       //padding: 8px;
       gap: 16px;
-      &-total-stats{
+
+      &-total-stats {
 
       }
-      &-rating{
+
+      &-rating {
 
       }
     }
   }
 }
+
 @include small-mobile {
   .administration {
-    &__heading{
+    &__heading {
       text-align: center;
     }
+
     &__content {
       flex-direction: column;
 
@@ -52,9 +57,10 @@
 
 @include mobile {
   .administration {
-    &__heading{
+    &__heading {
       text-align: center;
     }
+
     &__content {
       //flex-direction: column;
 
