@@ -37,9 +37,13 @@ export class CommentsComponent {
   }
 
   async ngOnInit(): Promise<void> {
+
+    // Если тебе нужно взять какие-либо данные с урла, есть способ проще
+    // https://angular.io/guide/router
     // Тут хитрым но глупым способом вырезаем строку
     // @ts-ignore
     this.url = this.activeRout.snapshot['_routerState'].url.split('/')[2];
+
     this.comments = await lastValueFrom(this.CService.getBySource(this.url))
     for (let comment of this.comments) {
       const author = await lastValueFrom(this.UService.get(comment.author_id))
